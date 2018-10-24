@@ -21,6 +21,6 @@ document.getElementById('numbers').graph.addEventListener('click', () => {
         y[f]++
     }
     let x = Array(go + 1).fill(0).map((v, i) => i)
-    Plotly.newPlot('graph', [{ x, y, type: 'scatter', mode: 'marker' }], { title: 'Cars That Do Not Stop', xaxis: { range: [0, go] }, yaxis: { range: [0, Math.max(y)] } })
+    Plotly.newPlot('graph', [{ x, y, type: 'scatter', mode: 'marker' }], { title: 'Cars That Do Not Stop', xaxis: { title: 'Number of Cars', range: [0, go] }, yaxis: { title: 'Times Stopped', range: [0, Math.max(y)] } })
 }, false)
 
