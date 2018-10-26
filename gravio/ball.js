@@ -1,6 +1,6 @@
-class Node {
+class Ball {
 
-    constructor (v, s, c) {
+    constructor(v, s, c) {
         this.pos = createVector(random(0, width), random(0, height));
         this.vel = p5.Vector.random2D().mult(v);
         this.size = s;
@@ -8,10 +8,10 @@ class Node {
     }
 
     update() {
-        if(this.pos.x < 0 || this.pos.x > width - this.size) {
+        if (this.pos.x < 0 || this.pos.x > width - this.size) {
             this.vel.x *= -1;
         }
-        if(this.pos.y < 0 || this.pos.y > height - this.size) {
+        if (this.pos.y < 0 || this.pos.y > height - this.size) {
             this.vel.y *= -1;
         }
         this.pos.add(this.vel);
@@ -23,11 +23,11 @@ class Node {
         ellipse(this.pos.x, this.pos.y, this.size, this.height);
     }
 
-    applyForce(f){
+    applyForce(f) {
         this.vel.add(f);
     }
 
-    isOutOfBounds(p, n, m){
+    isOutOfBounds(p, n, m) {
         return p < n || p > m;
     }
 
