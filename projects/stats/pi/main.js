@@ -14,13 +14,16 @@ let dot_graphics
 
 let inside
 
+const title = 'PI'
+const places = 8
+
 function setup() {
     circle = {
         size: Math.min(windowWidth, windowHeight)
     }
     createCanvas(circle.size, circle.size)
     textAlign(CENTER)
-    textSize(20)
+    textSize(50)
     noStroke()
     m = createVector(width / 2, height / 2)
     reset()
@@ -36,19 +39,21 @@ function reset() {
 
 
 function draw() {
-    background(51);
+    background(120);
     if (dots < dot.max) {
         for (let i = 0; i < dot.per_frame; i++) {
             addDot()
             dots++
         }
     }
-    let pi = Math.round(appox() * 1000) / 1000
+    let pi = str(Math.round(appox() * Math.pow(10, places)) / Math.pow(10, places))
+    pi += '0'.repeat(places - pi.length + 2)
     image(dot_graphics, 0, 0)
     fill(255, 120)
     ellipse(width / 2, height / 2, circle.size, circle.size)
-    fill(0)
-    text(str(pi), width / 2, height - textSize())
+    fill(255)
+    text(title, width / 2, height / 2 - 2 * textSize())
+    text(str(pi), width / 2, height / 2)
 }
 
 function addDot() {
