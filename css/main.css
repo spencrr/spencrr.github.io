@@ -1,0 +1,87 @@
+:root {
+    --dark-background: #bbb;
+    --light-background: #cccccc;
+    --link-col: #1ba751;
+}
+
+body {
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#navbar {
+    width: 100%;
+}
+
+#navbar ul {
+    list-style-type: none;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--light-background);  
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+}
+
+#navbar li{
+    float: left;
+    background-color: var(--light-background);
+    flex: 1;
+    transition: .25s ease-out;
+}
+
+#navbar li:hover {
+    background-color: var(--dark-background);
+    color: var(--light-background);
+    transition: .25s ease-in;
+}
+
+/* #navbar a {
+    margin: 0;
+    padding: 4em;
+} */
+
+#overview {
+    font-size: 150%;
+}
+
+a:link {
+    color: var(--link-col);
+}
+a:visited {
+    color: var(--link-col);
+}
+
+a {
+    text-decoration: none;
+}
+
+#info a {
+    line-height: 110%;
+    font-size: 100%;
+    transition: .25s ease-out;
+}
+
+#info a:hover {
+    line-height: 100%;
+    font-size: 110%;
+    transition: .25s ease-in;
+} 
+
+#big {
+    display: flex;
+    flex-direction: row;
+}
+
+#overview {
+    flex: 1;
+}
+
+#pic {
+    background-image: url("../imgs/me.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+}

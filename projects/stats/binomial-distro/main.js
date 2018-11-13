@@ -33,13 +33,7 @@ document.getElementById('numbers').graph.addEventListener('click', () => {
     let x = y.map((element, index) => {
         return index / points
     })
-
-    for (let i = 0; i < n; i++) {
-        let random = Math.random()
-        if (random <= p) {
-            y[Math.round(random * points)]++
-        }
-    }
+    y = Math.n
 
     console.log(x, y)
 
