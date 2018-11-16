@@ -2,8 +2,8 @@ let circle
 
 let dot = {
     size: 5,
-    per_frame: 100,
-    max: 100000
+    per_frame: 1000,
+    max: 1000000
 }
 
 let dots
@@ -19,9 +19,9 @@ const places = 8
 
 function setup() {
     circle = {
-        size: Math.min(windowWidth, windowHeight)
+        size: Math.min(windowWidth, windowHeight) / 2
     }
-    createCanvas(circle.size, circle.size)
+    createCanvas(2 * circle.size, 2 * circle.size)
     textAlign(CENTER)
     textSize(50)
     noStroke()
@@ -50,19 +50,19 @@ function draw() {
     pi += '0'.repeat(places - pi.length + 2)
     image(dot_graphics, 0, 0)
     fill(255, 120)
-    ellipse(width / 2, height / 2, circle.size, circle.size)
-    fill(255)
+    ellipse(width / 2, height / 2, 2 * circle.size, 2 * circle.size)
+    fill(0)
     text(title, width / 2, height / 2 - 2 * textSize())
     text(str(pi), width / 2, height / 2)
 }
 
 function addDot() {
     dot_graphics.fill(random(255), 255, 255)
-    let x = random(width)
-    let y = random(height)
+    let x = random(-1, width)
+    let y = random(-1, height)
     dot_graphics.ellipse(x, y, dot.size, dot.size)
     let d = createVector(x, y);
-    if (p5.Vector.sub(d, m).magSq() <= sq(circle.size / 2)) {
+    if (p5.Vector.sub(d, m).magSq() <= sq(circle.size)) {
         inside++
     }
 }
