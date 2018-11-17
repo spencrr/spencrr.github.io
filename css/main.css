@@ -1,107 +1,136 @@
-:root {
-    --dark-background: #bbb;
-    --light-background: #cccccc;
-    --link-col: #1ba751;
-    --nav-link-col: #0d45bd;
-    --link-growth: 125%;
-    --link-shrink: 80%;
-}
-
 body {
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 0;
 }
 
-a:link, a:visited {
+a {
     text-decoration: none;
-    color: var(--link-col);
 }
 
 #navbar {
-    position: sticky;    
-    top: 1vw;
-    margin: 1vw;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     text-align: center; 
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    width: 100%;
+    background: radial-gradient(rgb(104, 104, 104), rgba(104, 104, 104, 0.623));
 }
 
-#navbar a{
+#navbar > a {
     flex: 1;
-    padding: 1vw 0vw;
-    background-color: var(--light-background);
-    transition: .1s ease-out;
+    padding: 1vw 0;
+    background-color: rgba(88, 144, 248, 0);
+    transition: .35s ease-out;
 }
 
-#navbar a:hover {
-    background-color: var(--dark-background);
-    transition: .1s ease-in;
+#navbar > a:visited, #navbar > a:link {
+    color: rgb(255, 255, 255);
 }
 
-#content {
-    display: grid;
-    grid-gap: 2vw;
-    margin: 1vw;
-    /* grid-template: repeat(1, 2fr); */
+#navbar > a:hover {
+    background-color: rgba(88, 144, 248, 0.25);
+    transition: .15s ease-in;
 }
 
-#content a {
-    line-height: var(--link-growth);
-    font-size: 100%;
-    transition: .25s ease-out;
+@media only screen and (max-width: 600px) {
+    #intro {
+        display: block; 
+    }
+    
+    #links {
+        text-align: center;
+    }
+
+    #links > a > img {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    #portrait {
+        text-align: center;
+    }
+
+    #portrait > img {
+        border-radius: 3vw;
+        width: 80vw;
+    }
 }
 
-#content a:hover {
-    line-height: var(--link-shrink);
-    font-size: var(--link-growth);
-    transition: .25s ease-in;
+@media only screen and (min-width: 600px) {
+    #intro {
+        display: grid;
+    }
+    
+    #links {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    #links {
+        text-align: center;
+    }
+    
+    #links > a > img {
+        height: 4vw;
+        width: 4vw;
+        margin: 1vw;
+    }
+    
+    #portrait {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 3; 
+        text-align: center;   
+    }
+    
+    #portrait > img {
+        border-radius: 3vw;
+        width: 20vw;
+    }
 }
 
-#overview {
-    font-size: 150%;
-    font-weight: bold;
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+.banner {
+    overflow: hidden;
+    position: relative;
 }
 
-#portrait {
-    background-image: url("../imgs/me.jpg");
-    background-size: auto 100%;
+.banner h1 {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    color: white;
+}
+
+.banner-image {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 300%;
+    height: 20vh;
+}
+
+#description .banner-image {
+    background-image: url(http://www.milwaukeeindependent.com/wp-content/uploads/2018/04/SkylineWithCouture.jpg);
+}
+
+#experience .banner-image {
+    background-image: url(https://cdn-images-1.medium.com/max/1600/1*2rvLWwFrmgahCoGSSPS_xA.png);
+}
+
+#robots .banner-image {
+    background-image: url(http://cedarburgrobotics.com/wp-content/uploads/2013/09/3197-Pic.jpg);
+}
+
+.banner-image::before {
+    content: " ";
+    background-color: rgba(40, 27, 230, 0.2);
+    height: 100%;
     width: 100%;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
+    display: block;
 }
 
-#detail {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
-    overflow: hidden; 
-    max-width: auto;    
+.section {
+    padding: 4vw;
 }
-
-#links {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
-    text-align: center; 
-    display: flex;
-    flex-direction: row;
-    flex-basis: 
-}
-
-#links a {
-    
-}
-
-/* #links img {
-    transform: scale(1);
-    transition: .2s ease-out
-}
-
-#links img:hover {
-    transform: scale(.95);
-    transition: .1s ease-in;
-} */
