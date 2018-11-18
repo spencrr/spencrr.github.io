@@ -39,6 +39,10 @@ a {
     color: rgb(0, 144, 240)
 }
 
+#intro {
+    padding: 4vw;
+}
+
 @media only screen and (max-width: 600px) {
     #intro {
         display: block; 
@@ -66,7 +70,7 @@ a {
         display: grid;
         justify-items: center;
         text-align: center;
-        grid-template: repeat(4, 1fr) / repeat(2, 1fr)
+        grid-template: repeat(5, 1fr) / repeat(2, 1fr)
     }
     
     #scroll-container {
@@ -82,12 +86,11 @@ a {
         max-width: 80%;
         height: 80%;
         margin: 0 auto;
-        line-height: 200%;
     }
     
     #links {
         grid-column: 1 / span 1;
-        grid-row: 4 / span 1;
+        grid-row: 5 / span 1;
     }
     
     
@@ -99,7 +102,7 @@ a {
     
     #portrait {
         grid-column: 2 / span 1;
-        grid-row: 1 / span 4; 
+        grid-row: 1 / span 5; 
         text-align: center;   
     }
     
