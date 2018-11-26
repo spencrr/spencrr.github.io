@@ -17,7 +17,7 @@ getIP.onload = () => {
     let data = JSON.parse(getIP.responseText);
     data['iat'] = new Date();
     let sendIP = new XMLHttpRequest();
-    sendIP.open("POST", 'http://35.202.160.152:5000/api/log', true);
+    sendIP.open("POST", 'https://spencercloud.tk/api/log', true);
     sendIP.setRequestHeader('Content-Type', 'application/json');
     sendIP.send(JSON.stringify(data));
 
