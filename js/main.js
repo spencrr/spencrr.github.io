@@ -15,9 +15,9 @@ let getIP = new XMLHttpRequest();
 getIP.open('GET', 'https://ipinfo.io/json', true);
 getIP.onload = () => {
     let data = JSON.parse(getIP.responseText);
-    data['iat'] = new Date();
+    data['timestamp'] = new Date();
     let sendIP = new XMLHttpRequest();
-    sendIP.open("POST", 'https://spencercloud.tk/api/log', true);
+    sendIP.open('POST', 'https://spencercloud.tk/api/views', true);
     sendIP.setRequestHeader('Content-Type', 'application/json');
     sendIP.send(JSON.stringify(data));
 
