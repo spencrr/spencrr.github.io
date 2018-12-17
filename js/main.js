@@ -8,7 +8,6 @@ let typed = new Typed('.interests', {
     backDelay: 1500,
     loop: true,
     shuffle: true,
-    smartBackspace: true,
 });
 
 let getIP = new XMLHttpRequest();
