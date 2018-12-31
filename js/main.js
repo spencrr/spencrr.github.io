@@ -1,4 +1,4 @@
-let typed = new Typed('.interests', {
+let typed = new Typed('#interests', {
     strings: ['SpaceX Enthusiast', 'Maker', 'Developer',
         'Tech Visionary', 'Computer Scientist', 'Photographer', 'Beta Tester'
     ],
