@@ -121,10 +121,10 @@ a {
 
 .banner h1 {
     position: absolute;
-    top: 8vh;
+    bottom: 3vh;
     left: 2vw;
     color: white;
-    font-size: 250%;
+    font-size: 5vh;
 }
 
 .banner-image {
