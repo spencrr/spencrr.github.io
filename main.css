@@ -121,7 +121,7 @@ a {
 
 .banner h1 {
     position: absolute;
-    bottom: 3vh;
+    top: 9vh;
     left: 2vw;
     color: white;
     font-size: 5vh;
