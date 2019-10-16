@@ -32,17 +32,6 @@
                 shuffle: true,
                 smartBackspace: false,
             });
-            let getIP = new XMLHttpRequest();
-            getIP.open('GET', 'https://ipinfo.io/json', true);
-            getIP.onload = () => {
-                let data = JSON.parse(getIP.responseText);
-                data['timestamp'] = new Date();
-                let sendIP = new XMLHttpRequest();
-                sendIP.open('POST', 'https://spencercloud.tk/api/views', true);
-                sendIP.setRequestHeader('Content-Type', 'application/json');
-                sendIP.send(JSON.stringify(data));
-            };
-            getIP.send();
         });
     </script>
 </head>
@@ -52,7 +41,7 @@
         <a href=''>
             <div class=navbar-item>Spencer Schoenberg</div>
         </a>
-        <a href='https://github.com/spencers0730?tab=repositories'>
+        <a href='https://github.com/spencrr?tab=repositories'>
             <div class=navbar-item>Projects</div>
         </a>
         <a href=Spencer_Schoenberg_Résumé.pdf>
@@ -69,7 +58,7 @@
                 <div id=scroll>I'm a <span id=interests></span></div>
             </div>
             <div id=links>
-                <a href='https://github.com/spencers0730' target=_blank>
+                <a href='https://github.com/spencrr' target=_blank>
                     <img src="imgs/github.png" alt=GitHub>
                 </a>
                 <a href='https://linkedin.com/in/spencer-schoenberg/' target=_blank>
@@ -92,7 +81,7 @@
                 <p><span id=type>Computer Scientist</span> @ <a id=csd target=_blank href='https://wisc.edu'>University
                         of Wisconsin - Madison</a>
                 </p>
-                <p>Check out my <a href="https://github.com/spencers0730?tab=repositories">Projects</a>!
+                <p>Check out my <a href="https://github.com/spencrr?tab=repositories">Projects</a>!
                 </p>
             </div>
         </div>
