@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+
 body {
     font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     text-align: justify;
     margin: 0;
 }
@@ -9,31 +12,30 @@ a {
 }
 
 #navbar {
-    overflow: hidden;
     display: flex;
     flex-direction: row;
     text-align: center;
     width: 100%;
-    background: radial-gradient(rgb(104, 104, 104), rgba(104, 104, 104, 0.623));
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
 }
 
 #navbar>a {
     flex: 1;
-    padding: 1vw 0;
-    background-color: rgba(88, 144, 248, 0);
-    transition: .35s ease-out;
-    font-weight: bold;
-    font-size: 150%;
-}
-
-#navbar>a:visited,
-#navbar>a:link {
-    color: rgb(255, 255, 255);
+    padding: 2vw 0;
+    margin: 1vh 2vw;
+    font-size: 5vh;
+    border-radius: 5px;
+    color: black;
+    background: rgba(0, 0, 0, 0.178);
+    transition: .25s ease-in-out;
 }
 
 #navbar>a:hover {
-    background-color: rgba(88, 144, 248, 0.25);
-    transition: .15s ease-in;
+    background-color: rgba(94, 94, 94, 0.25);
+    transform: scale(1.05);
 }
 
 #content a:visited,
@@ -70,9 +72,9 @@ a {
 
 @media only screen and (min-width:600px) {
     #intro {
-        display: grid;
-        justify-items: center;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
         grid-template: repeat(5, 1fr)/repeat(2, 1fr)
     }
 
@@ -80,9 +82,7 @@ a {
         font-size: 325%;
         width: 40vw;
         height: 20vh;
-        justify-content: center;
-        grid-row: 2/span 2;
-        grid-column: 1/span 1;
+        /* justify-content: center; */
     }
 
     #scroll {
@@ -91,21 +91,12 @@ a {
         margin: 0 auto;
     }
 
-    #links {
-        grid-column: 1/span 1;
-        grid-row: 5/span 1;
-    }
+    #links {}
 
     #links>a>img {
         height: 4vw;
         width: 4vw;
         margin: 1vw;
-    }
-
-    #portrait {
-        grid-column: 2/span 1;
-        grid-row: 1/span 5;
-        text-align: center;
     }
 
     #portrait>img {
