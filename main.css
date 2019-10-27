@@ -45,21 +45,12 @@ a {
 
 #intro {
     padding: 4vw;
-    text-align: center;
-}
-
-#scroll-container {
-    margin: 2vh auto;
-}
-
-#links {
-    display: flex;
-    justify-content: center;
 }
 
 @media only screen and (max-width:600px) {
     #intro {
         display: block;
+        text-align: center;
     }
 
     #links>a>img {
@@ -80,10 +71,18 @@ a {
 }
 
 @media only screen and (min-width:600px) {
+    #intro {
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
+        grid-template: repeat(5, 1fr)/repeat(2, 1fr)
+    }
+
     #scroll-container {
         font-size: 325%;
         width: 40vw;
         height: 20vh;
+        /* justify-content: center; */
     }
 
     #scroll {
@@ -92,6 +91,7 @@ a {
         margin: 0 auto;
     }
 
+    #links {}
 
     #links>a>img {
         height: 4vw;
