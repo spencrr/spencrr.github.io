@@ -13,18 +13,18 @@ a {
 
 #navbar {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     text-align: center;
     width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 1; */
 
 }
 
 #navbar>a {
     flex: 1;
-    padding: 2vw 0;
+    padding: 2vh 0;
     margin: 1vh 2vw;
     font-size: 5vh;
     border-radius: 5px;
