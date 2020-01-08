@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/macos,visualstudiocode,windows,linux
-# Edit at https://www.gitignore.io/?templates=macos,visualstudiocode,windows,linux
+# Created by https://www.gitignore.io/api/macos,linux,windows,visualstudiocode,vue
+# Edit at https://www.gitignore.io/?templates=macos,linux,windows,visualstudiocode,vue
 
 ### Linux ###
 *~
@@ -56,9 +56,26 @@ Temporary Items
 # Ignore all local history of files
 .history
 
+### Vue ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_componets
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
@@ -81,4 +98,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/macos,visualstudiocode,windows,linux
+# End of https://www.gitignore.io/api/macos,linux,windows,visualstudiocode,vue
+n
