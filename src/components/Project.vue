@@ -4,9 +4,9 @@
       :href="project.href"
       :raised="playPause(hover)"
       height="100%"
-      class="d-flex flex-column text-left"
+      class="d-flex flex-column text-left no-wrap"
     >
-      <v-card-title>{{ project.title }}</v-card-title>
+      <v-card-title class="no-wrap">{{ project.title }}</v-card-title>
       <v-card-subtitle>{{ project.subtitle }}</v-card-subtitle>
       <v-img v-if="project.img" :src="project.img()"></v-img>
       <div>
@@ -57,11 +57,7 @@ export default {
 };
 </script>
 
-<style scoped>
-.no-wrap {
-  word-break: keep-all;
-}
-
+<style>
 video {
   width: 100%;
   height: 100%;

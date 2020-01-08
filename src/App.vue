@@ -88,6 +88,10 @@ export default {
 .invert {
   filter: invert(1);
 }
+
+.no-wrap {
+  word-break: break-word;
+}
 </style>
 
 <style scoped>
