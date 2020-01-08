@@ -38,8 +38,7 @@ export default {
   data() {
     return {
       resume: {
-        href:
-          "https://spencrr.github.io/Spencer_Schoenberg_R%C3%A9sum%C3%A9.pdf",
+        href: "./Spencer_Schoenberg_R%C3%A9sum%C3%A9.pdf"
       },
       portrait: { src: require("@/assets/me-bw.jpg") }
     };
