@@ -41,7 +41,7 @@ export default {
         href:
           "https://spencrr.github.io/Spencer_Schoenberg_R%C3%A9sum%C3%A9.pdf",
       },
-      portrait: { src: "https://spencrr.github.io/imgs/me-bw.jpg" },
+      portrait: { src: require("@/assets/me-bw.jpg") }
     };
   },
   mounted() {
@@ -53,7 +53,7 @@ export default {
         "Photographer",
         "Rocket Enthusiast",
         "Computer Scientist",
-        "Cryptographer",
+        "Cryptographer"
       ],
       typeSpeed: 30,
       backSpeed: 30,
@@ -61,9 +61,9 @@ export default {
       backDelay: 1500,
       loop: true,
       shuffle: true,
-      smartBackspace: false,
+      smartBackspace: false
     });
-  },
+  }
 };
 </script>
 
