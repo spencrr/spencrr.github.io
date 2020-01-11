@@ -45,6 +45,9 @@ export default ({ getAnchorTag }) => [
     href:
       "https://github.com/spencrr/processing-projects/tree/master/Math%20Visualizations/FibonacciSpiral",
     vid: () => require("@/assets/projects/fibonacci-spiral.mp4"),
-    desc: "",
+    desc: `The Fibonacci Spiral project is a direct implementation of the ${getAnchorTag(
+      "Golden Spiral",
+      "https://wikipedia.org/wiki/Golden_spiral"
+    )}, where an infinite sequence of squares create a spiral by drawing arcs through each square. The squares are wrapped around themselves with lengths corresponding to the elements in the Fibonacci Sequence.`,
   },
 ];
