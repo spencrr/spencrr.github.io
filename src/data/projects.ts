@@ -1,4 +1,17 @@
-export default ({ getAnchorTag }) => [
+interface Project {
+  title: String;
+  subtitle: String;
+  href: String;
+  vid?: () => String;
+  img?: () => String;
+  desc: String;
+}
+
+interface ProjectConfig {
+  getAnchorTag: (text: String, href: String) => String;
+}
+
+const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
   {
     title: "A Visualization of Schelling's Model",
     subtitle: "Agent-Based Sociology Model of Segregation",
@@ -51,3 +64,5 @@ export default ({ getAnchorTag }) => [
     )}, where an infinite sequence of squares create a spiral by drawing arcs through each square. The squares are wrapped around themselves with lengths corresponding to the elements in the Fibonacci Sequence.`,
   },
 ];
+
+export default projects;
