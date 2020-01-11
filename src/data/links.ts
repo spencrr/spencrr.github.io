@@ -1,4 +1,10 @@
-export default [
+interface Link {
+  title: string;
+  src: string;
+  href: string;
+}
+
+const links: Link[] = [
   {
     title: "Github",
     src: "links/github.png",
@@ -20,3 +26,5 @@ export default [
     href: "mailto:spencers0730@gmail.com",
   },
 ];
+
+export default links;
