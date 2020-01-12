@@ -1,14 +1,14 @@
 interface Project {
-  title: String;
-  subtitle: String;
-  href: String;
-  vid?: () => String;
-  img?: () => String;
-  desc: String;
+  title: string;
+  subtitle: string;
+  href: string;
+  vid?: () => string;
+  img?: () => string;
+  desc: string;
 }
 
 interface ProjectConfig {
-  getAnchorTag: (text: String, href: String) => String;
+  getAnchorTag: (text: string, href: string) => string;
 }
 
 const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
