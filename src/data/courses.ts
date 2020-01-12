@@ -1,4 +1,4 @@
-interface Course {
+export interface Course {
   title: string;
   descriptiveTitle: string;
   institute: string;
@@ -102,4 +102,47 @@ const courses: Course[] = [
   },
 ];
 
+export interface CourseSort {
+  compareTo(a: Course, b: Course): number;
+  display: string;
+}
+
+const sorts: CourseSort[] = [
+  {
+    compareTo: (a, b) => {
+      return a.number.localeCompare(b.number);
+    },
+    display: "Course Number",
+  },
+  {
+    compareTo: (a, b) => {
+      return a.title.localeCompare(b.title);
+    },
+    display: "Course Title",
+  },
+  {
+    compareTo: (a, b) => {
+      return a.institute.localeCompare(b.institute);
+    },
+    display: "Institution",
+  },
+];
+
+const alphabeticalSort: CourseSort = {
+  compareTo: (a, b) => {
+    return a.title.localeCompare(b.title);
+  },
+  display: "Course Title",
+};
+const complexSorts: CourseSort[] = sorts.map(sort => {
+  const compareTo = (a: Course, b: Course) => {
+    const compare = sort.compareTo(a, b);
+    if (compare == 0) return alphabeticalSort.compareTo(a, b);
+    return compare;
+  };
+
+  return { ...sort, compareTo };
+});
+
+export { complexSorts as sorts };
 export default courses;
