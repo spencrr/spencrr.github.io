@@ -19,7 +19,7 @@
 <script>
 import Project from "@/components/Project";
 import SectionBlock from "@/components/SectionBlock";
-import projects from "@/data/projects.js";
+import projects from "@/data/projects";
 
 export default {
   name: "Projects",
