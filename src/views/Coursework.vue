@@ -23,34 +23,13 @@
 </template>
 
 <script>
-import SectionBlock from "@/components/SectionBlock";
-import Course from "@/components/Course";
+import Vue from "vue";
+import SectionBlock from "@/components/SectionBlock.vue";
+import Course from "@/components/Course.vue";
 
-import courses from "@/data/courses";
+import courses, { sorts } from "@/data/courses";
 
-const sorts = [
-  {
-    compareTo: (b, a) => {
-      let compareString = s => s.substring(s.lastIndexOf(" "));
-      return compareString(a.desc).localeCompare(compareString(b.desc));
-    },
-    display: "Course Number",
-  },
-  {
-    compareTo: (a, b) => {
-      return a.title.localeCompare(b.title);
-    },
-    display: "Course Title",
-  },
-  {
-    compareTo: (a, b) => {
-      return a.desc.localeCompare(b.desc);
-    },
-    display: "Institution",
-  },
-];
-
-export default {
+export default Vue.extend({
   name: "Coursework",
   components: { SectionBlock, Course },
   data() {
@@ -66,5 +45,5 @@ export default {
       return Array.from(this.courses).sort(sorts[this.selectedSort].compareTo);
     },
   },
-};
+});
 </script>
