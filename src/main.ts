@@ -5,7 +5,7 @@ import router from "./plugins/router";
 
 Vue.config.productionTip = false;
 Vue.config.performance = true;
-Vue.config.prettify = false;
+// Vue.config.prettify = false;
 
 new Vue({
   vuetify,
