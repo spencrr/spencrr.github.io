@@ -57,7 +57,7 @@ import LinkListItem from "@/components/LinkListItem";
 import SectionListItem from "@/components/SectionListItem";
 import DarkModeButton from "@/components/DarkModeButton";
 
-import { sections } from "@/views/Home.vue";
+import { sections } from "@/views/Home";
 import links from "@/data/links";
 
 export default {
