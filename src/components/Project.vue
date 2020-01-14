@@ -4,15 +4,22 @@
       :href="project.href"
       :raised="playPause(hover)"
       height="100%"
-      class="d-flex flex-column text-left no-wrap"
+      class="d-flex flex-column text-left"
     >
-      <v-card-title class="no-wrap">{{ project.title }}</v-card-title>
-      <v-card-subtitle>{{ project.subtitle }}</v-card-subtitle>
-      <v-img v-if="project.img" :src="project.img()"></v-img>
+      <v-card-title class="no-wrap" v-text="project.title" />
+      <v-card-subtitle v-text="project.subtitle" />
+
+      <v-img
+        v-if="img"
+        :src="project.src()"
+        width="60%"
+        class="align-self-center"
+        contain=""
+      />
       <div>
         <video
-          v-if="project.vid"
-          :src="project.vid()"
+          v-if="vid"
+          :src="project.src()"
           ref="vid"
           v-intersect="onIntersect"
           loop
@@ -44,6 +51,7 @@ export default {
       }
       return val;
     },
+
     onIntersect(entries) {
       this.intersecting = entries[0].isIntersecting;
       this.playPause();
@@ -52,6 +60,12 @@ export default {
   computed: {
     small() {
       return this.$vuetify.breakpoint.smAndDown;
+    },
+    img() {
+      return this.project.media === "img";
+    },
+    vid() {
+      return this.project.media === "vid";
     },
   },
 };
