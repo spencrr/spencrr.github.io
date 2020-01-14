@@ -16,13 +16,18 @@
               target="_blank"
               class="ma-3"
               color="accent"
-              >Résumé</v-btn
             >
+              Résumé
+            </v-btn>
           </v-col>
         </v-row>
       </v-col>
-      <v-col class="d-flex justify-center" cols="12" md="6">
-        <img height="350px" contain class="rounded" :src="portrait.src" />
+      <v-col cols="12" sm="6">
+        <v-row no-gutters justify="center">
+          <v-col cols="9" md="6">
+            <v-img contain class="rounded" :src="portrait.src" />
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </SectionBlock>
