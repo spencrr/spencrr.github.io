@@ -72,7 +72,7 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     subtitle: "At my GitHub TODO", // TODO
     href: "https://github.com/spencrr?tab=repositories",
     media: "img",
-    src: () => require("@/assets/projects/github.svg"),
+    src: () => require("@/assets/github.svg"),
     desc:
       "Not every project has been fully documented yet, so feel free to check out more of my work, or see the projects' inner workings.",
   },

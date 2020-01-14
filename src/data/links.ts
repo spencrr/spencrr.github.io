@@ -7,7 +7,7 @@ interface Link {
 const links: Link[] = [
   {
     title: "Github",
-    src: "links/github.png",
+    src: "github.svg",
     href: "https://github.com/spencrr",
   },
   {
