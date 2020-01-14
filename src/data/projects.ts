@@ -68,13 +68,21 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     )}, where an infinite sequence of squares create a spiral by drawing arcs through each square. The squares are wrapped around themselves with lengths corresponding to the elements in the Fibonacci Sequence.`,
   },
   {
+    title: "This Portfolio",
+    subtitle: "Created with VueJS, Vue Router, and Vuetify",
+    href: "https://github.com/spencrr/spencrr.github.io",
+    media: "img",
+    src: () => require("@/assets/vue.svg"),
+    desc: "",
+  },
+  {
     title: "And More!",
-    subtitle: "At my GitHub TODO", // TODO
+    subtitle: "On Github!",
     href: "https://github.com/spencrr?tab=repositories",
     media: "img",
     src: () => require("@/assets/github.svg"),
     desc:
-      "Not every project has been fully documented yet, so feel free to check out more of my work, or see the projects' inner workings.",
+      "Not every project has been fully documented yet, so feel free to check out more of my work, or see the inner workings of each project.",
   },
 ];
 
