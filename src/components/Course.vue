@@ -1,13 +1,14 @@
 <template>
   <v-expansion-panel>
-    <v-expansion-panel-header
-      ripple
-      class="font-weight-medium"
-      hide-actions
-      v-text="course.title"
-    />
-    <v-expansion-panel-content v-text="course.display" />
-    <v-expansion-panel-content v-text="course.description" />
+    <v-expansion-panel-header ripple class="font-weight-medium" hide-actions>
+      {{ course.title }}
+    </v-expansion-panel-header>
+    <v-expansion-panel-content>
+      {{ course.display }}
+    </v-expansion-panel-content>
+    <v-expansion-panel-content>
+      {{ course.description }}
+    </v-expansion-panel-content>
   </v-expansion-panel>
 </template>
 
