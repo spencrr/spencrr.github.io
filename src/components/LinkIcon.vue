@@ -12,7 +12,7 @@
         ></v-img>
       </v-btn>
     </template>
-    <span>{{ link.title }}</span>
+    <span v-text="link.title" />
   </v-tooltip>
 </template>
 
