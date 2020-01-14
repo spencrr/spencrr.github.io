@@ -100,6 +100,16 @@ const courses: Course[] = [
     description:
       "Basic concepts of logic, sets, partial order and other relations, and functions. Basic concepts of mathematics (definitions, proofs, sets, functions, and relations) with a focus on discrete structures: integers, bits, strings, trees, and graphs.  Propositional logic, Boolean algebra, and predicate logic. Mathematical induction and recursion. Invariants and algorithmic correctness. Recurrences and asymptotic growth analysis. Fundamentals of counting.",
   },
+  {
+    title: "AP Computer Science A",
+    descriptiveTitle: "AP Computer Science A",
+    institute: "Cedarburg High School",
+    display: "AP Computer Science A",
+    subject: "Computer Science",
+    number: "100",
+    description:
+      "AP Computer Science A is an introductory college-level computer science course. Students cultivate their understanding of coding through analyzing, writing, and testing code as they explore concepts like modularity, variables, and control structures.",
+  },
 ];
 
 export interface CourseSort {
