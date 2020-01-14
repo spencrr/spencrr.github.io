@@ -2,8 +2,8 @@ interface Project {
   title: string;
   subtitle: string;
   href: string;
-  vid?: () => string;
-  img?: () => string;
+  media: "img" | "vid";
+  src(): string;
   desc: string;
 }
 
@@ -16,7 +16,8 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     title: "A Visualization of Schelling's Model",
     subtitle: "Agent-Based Sociology Model of Segregation",
     href: "https://spencrr.github.io/schelling-model/",
-    vid: () => require("@/assets/projects/schellings-model.mp4"),
+    media: "vid",
+    src: () => require("@/assets/projects/schellings-model.mp4"),
     desc: `The Visualization of ${getAnchorTag(
       "Schelling's Model",
       "https://wikipedia.org/wiki/Agent-based_model#1970s_and_1980s:_the_first_models"
@@ -27,7 +28,8 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     subtitle: "Rule-Based Cellular Automaton",
     href:
       "https://github.com/spencrr/processing-projects/tree/master/Cellular%20Automata/GameOfLife",
-    vid: () => require("@/assets/projects/game-of-life.mp4"),
+    media: "vid",
+    src: () => require("@/assets/projects/game-of-life.mp4"),
     desc: `As a project for AP Computer Science, ${getAnchorTag(
       "Conway's Game of Life",
       "https://wikipedia.org/wiki/Conway%27s_Game_of_Life"
@@ -41,7 +43,8 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     subtitle: "Visualization Formed by an Iterative Complex Function",
     href:
       "https://github.com/spencrr/processing-projects/tree/master/Math%20Visualizations/JuliaSetsMandelbrotSet",
-    vid: () => require("@/assets/projects/julia-sets.mp4"),
+    media: "vid",
+    src: () => require("@/assets/projects/julia-sets.mp4"),
     desc: `This project helps create a visualization for
             ${getAnchorTag(
               "Julia Sets",
@@ -57,11 +60,21 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     subtitle: "A Logarithmic Self-Similar Spiral Commonly Found in Nature",
     href:
       "https://github.com/spencrr/processing-projects/tree/master/Math%20Visualizations/FibonacciSpiral",
-    vid: () => require("@/assets/projects/fibonacci-spiral.mp4"),
+    media: "vid",
+    src: () => require("@/assets/projects/fibonacci-spiral.mp4"),
     desc: `The Fibonacci Spiral project is a direct implementation of the ${getAnchorTag(
       "Golden Spiral",
       "https://wikipedia.org/wiki/Golden_spiral"
     )}, where an infinite sequence of squares create a spiral by drawing arcs through each square. The squares are wrapped around themselves with lengths corresponding to the elements in the Fibonacci Sequence.`,
+  },
+  {
+    title: "And More!",
+    subtitle: "At my GitHub TODO", // TODO
+    href: "https://github.com/spencrr?tab=repositories",
+    media: "img",
+    src: () => require("@/assets/projects/github.svg"),
+    desc:
+      "Not every project has been fully documented yet, so feel free to check out more of my work, or see the projects' inner workings.",
   },
 ];
 
