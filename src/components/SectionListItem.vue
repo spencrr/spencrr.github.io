@@ -1,7 +1,7 @@
 <template>
   <v-list-item @click="click">
     <v-list-item-content>
-      <v-list-item-title>{{ section }}</v-list-item-title>
+      <v-list-item-title v-text="section" />
     </v-list-item-content>
   </v-list-item>
 </template>

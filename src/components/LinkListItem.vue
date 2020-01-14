@@ -11,7 +11,7 @@
       />
     </v-list-item-icon>
     <v-list-item-content>
-      <v-list-item-title>{{ link.title }}</v-list-item-title>
+      <v-list-item-title v-text="link.title" />
     </v-list-item-content>
   </v-list-item>
 </template>

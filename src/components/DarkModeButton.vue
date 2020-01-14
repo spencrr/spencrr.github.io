@@ -1,13 +1,9 @@
 <template>
   <v-tooltip top>
     <template v-slot:activator="{ on }">
-      <v-icon
-        v-on="on"
-        @click="toggleDark"
-        class="glow mx-2"
-        color="secondary"
-        >{{ mdiDesktopMac }}</v-icon
-      >
+      <v-icon v-on="on" @click="toggleDark" class="glow mx-2" color="secondary">
+        {{ mdiDesktopMac }}
+      </v-icon>
     </template>
     <span>Super Secret Dark Mode 😉</span>
   </v-tooltip>
