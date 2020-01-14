@@ -36,7 +36,7 @@ export default Vue.extend({
     return {
       courses,
       sorts: sorts.map((v, i) => ({ text: v.display, value: i })),
-      selectedSort: null,
+      selectedSort: 0,
     };
   },
   computed: {
