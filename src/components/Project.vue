@@ -12,9 +12,9 @@
       <v-img
         v-if="img"
         :src="project.src()"
-        width="60%"
+        width="40%"
         class="align-self-center"
-        contain=""
+        contain
       />
       <div>
         <video
