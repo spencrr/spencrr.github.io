@@ -110,6 +110,16 @@ const courses: Course[] = [
     description:
       "AP Computer Science A is an introductory college-level computer science course. Students cultivate their understanding of coding through analyzing, writing, and testing code as they explore concepts like modularity, variables, and control structures.",
   },
+  {
+    title: "Client-Side Internet Technologies",
+    descriptiveTitle: "Client-Side Internet Technologies",
+    institute: "Stanford",
+    display: "Stanford Computer Science 193C",
+    subject: "Computer Science",
+    number: "193C",
+    description:
+      "Client-side technologies used to create web sites such as Google maps or Gmail. Includes HTML5, CSS, JavaScript, the Document Object Model (DOM), and Ajax.",
+  },
 ];
 
 export interface CourseSort {
