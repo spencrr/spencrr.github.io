@@ -24,7 +24,9 @@
           v-intersect="onIntersect"
           loop
           muted
-          :playinline="small"
+          playsinline
+          @mouseenter="playPause(true)"
+          @mouseleave="playPause(false)"
         />
       </div>
       <v-card-text class="text-justify" v-html="project.desc" />
@@ -42,8 +44,7 @@ export default {
   methods: {
     playPause(val) {
       if (this.$refs.vid) {
-        let isSmall = this.small;
-        if ((!isSmall && val) || (isSmall && this.intersecting)) {
+        if ((!this.small && val) || (this.small && this.intersecting)) {
           this.$refs.vid.play();
         } else {
           this.$refs.vid.pause();
