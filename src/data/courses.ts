@@ -2,7 +2,7 @@ export interface Course {
   title: string;
   descriptiveTitle: string;
   institute: string;
-  display: string;
+  display?: string;
   subject: string;
   number: string;
   description: string;
@@ -104,7 +104,6 @@ const courses: Course[] = [
     title: "AP Computer Science A",
     descriptiveTitle: "AP Computer Science A",
     institute: "Cedarburg High School",
-    display: "AP Computer Science A",
     subject: "Computer Science",
     number: "100",
     description:
