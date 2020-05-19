@@ -153,7 +153,7 @@ const alphabeticalSort: CourseSort = {
   },
   display: "Course Title",
 };
-const complexSorts: CourseSort[] = sorts.map(sort => {
+const complexSorts: CourseSort[] = sorts.map((sort) => {
   const compareTo = (a: Course, b: Course) => {
     const compare = sort.compareTo(a, b);
     if (compare == 0) return alphabeticalSort.compareTo(a, b);
