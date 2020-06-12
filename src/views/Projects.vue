@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import Project from "@/components/Project";
-import SectionBlock from "@/components/SectionBlock";
+import Project from "@/components/Project.vue";
+import SectionBlock from "@/components/SectionBlock.vue";
 import projects from "@/data/projects";
 
 export default {
