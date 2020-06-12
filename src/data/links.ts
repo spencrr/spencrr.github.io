@@ -1,8 +1,4 @@
-interface Link {
-  title: string;
-  src: string;
-  href: string;
-}
+import { Link } from "./types";
 
 const links: Link[] = [
   {

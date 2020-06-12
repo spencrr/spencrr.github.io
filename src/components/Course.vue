@@ -4,12 +4,13 @@
     <v-expansion-panel-content>
       <p v-if="course.display">{{ course.display }}</p>
       <p>{{ course.description }}</p>
+      <p>{{course.relevancy.display}}</p>
     </v-expansion-panel-content>
   </v-expansion-panel>
 </template>
 
 <script lang="ts">
-import { Course } from "@/data/courses";
+import { Course } from "@/data/types";
 import Vue, { PropType } from "vue";
 
 export default Vue.extend({
