@@ -16,9 +16,9 @@
               target="_blank"
               class="ma-3"
               color="accent"
+              x-large
+              >Résumé</v-btn
             >
-              Résumé
-            </v-btn>
           </v-col>
         </v-row>
       </v-col>
@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       resume: {
-        href: "./Spencer_Schoenberg_R%C3%A9sum%C3%A9.pdf",
+        href: "./Spencer_Schoenberg_Résumé.pdf",
       },
       portrait: { src: require("@/assets/me.jpg") },
     };
