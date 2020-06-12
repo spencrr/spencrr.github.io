@@ -52,12 +52,12 @@
 </template>
 
 <script>
-import LinkIcon from "@/components/LinkIcon";
-import LinkListItem from "@/components/LinkListItem";
-import SectionListItem from "@/components/SectionListItem";
-import DarkModeButton from "@/components/DarkModeButton";
+import LinkIcon from "@/components/LinkIcon.vue";
+import LinkListItem from "@/components/LinkListItem.vue";
+import SectionListItem from "@/components/SectionListItem.vue";
+import DarkModeButton from "@/components/DarkModeButton.vue";
 
-import { sections } from "@/views/Home";
+import { sections } from "@/views/Home.vue";
 import links from "@/data/links";
 
 export default {

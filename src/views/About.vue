@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import SectionBlock from "@/components/SectionBlock";
+import SectionBlock from "@/components/SectionBlock.vue";
 import Typed from "typed.js";
 
 export default {

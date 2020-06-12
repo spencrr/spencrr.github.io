@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import About from "@/views/About";
-import Projects from "@/views/Projects";
-import Coursework from "@/views/Coursework";
+import About from "@/views/About.vue";
+import Projects from "@/views/Projects.vue";
+import Coursework from "@/views/Coursework.vue";
 
 const components = { About, Projects, Coursework };
 const sections = Object.keys(components);
