@@ -19,6 +19,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app class="text-uppercase font-weight-bold">
+      <v-spacer v-if="linksInDrawer" />
       <v-toolbar-title>
         <router-link to="/" class="link">Spencer Schoenberg</router-link>
       </v-toolbar-title>
