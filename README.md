@@ -1,24 +1,7 @@
-# portfolio
+[![Build Status](https://www.travis-ci.org/spencrr/spencrr.github.io.svg?branch=source)](https://www.travis-ci.org/spencrr/spencrr.github.io)
 
-## Project setup
-```
-npm install
-```
+# spencrr.github.io
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Hey, looks like you found my website! Check it out [here](https://spencrr.github.io)!
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+It is built with [Node.js](https://nodejs.org/), [Vue.js](https://vuejs.org/), [TypeScript](https://www.typescriptlang.org/) and [Travis CI](https://www.travis-ci.org/).
