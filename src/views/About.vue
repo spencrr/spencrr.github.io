@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       resume: {
-        href: "./Spencer_Schoenberg_Résumé.pdf",
+        href: "./resume",
       },
       portrait: { src: require("@/assets/me.jpg") },
     };
