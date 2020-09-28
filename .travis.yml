@@ -1,20 +1,20 @@
 language: node_js
 node_js:
- - "node"
+  - "node"
 
 cache: npm
 
 script: npm run build
 
 deploy:
- provider: pages
- skip_cleanup: true
- github_token: $GITHUB_TOKEN
- local_dir: dist
- on:
-   branch: source
- target_branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: main
+  target_branch: gh-pages
 
 branches:
   only:
-  - source
+    - main
