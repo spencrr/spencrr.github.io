@@ -1,4 +1,4 @@
-[![Build Status](https://www.travis-ci.org/spencrr/spencrr.github.io.svg?branch=source)](https://www.travis-ci.org/spencrr/spencrr.github.io)
+[![Build Status](https://www.travis-ci.org/spencrr/spencrr.github.io.svg)](https://www.travis-ci.org/spencrr/spencrr.github.io)
 
 # spencrr.github.io
 
