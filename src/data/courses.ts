@@ -2,6 +2,62 @@ import { Course, CourseSort } from "./types";
 
 const courses: Course[] = [
   {
+    title: "Introduction To Bioinformatics",
+    descriptiveTitle: "Introduction To Bioinformatics",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Science 576",
+    subject: "Computer Science",
+    number: "576",
+    description:
+      "Algorithms for computational problems in molecular biology. The course will study algorithms for problems such as: genome sequencing and mapping, pairwise and multiple sequence alignment, modeling sequence classes and features, phylogenetic tree construction, and gene-expression data analysis.",
+    relevancy: {
+      date: new Date("2020-09"),
+      display: "Fall 2020",
+    },
+  },
+  {
+    title: "Introduction To Artificial Intelligence",
+    descriptiveTitle: "Introduction To Artificial Intelligence",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Science 540",
+    subject: "Computer Science",
+    number: "540",
+    description:
+      "Principles of knowledge-based search techniques, automatic deduction, knowledge representation using predicate logic, machine learning, probabilistic reasoning. Applications in tasks such as problem solving, data mining, game playing, natural language understanding, computer vision, speech recognition, and robotics.",
+    relevancy: {
+      date: new Date("2020-09"),
+      display: "Fall 2020",
+    },
+  },
+  {
+    title: "Introduction To Operating Systems",
+    descriptiveTitle: "Introduction To Operating Systems",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Science 537",
+    subject: "Computer Science",
+    number: "537",
+    description:
+      "Input-output hardware, interrupt handling, properties of magnetic tapes, discs and drums, associative memories and virtual address translation techniques. Batch processing, time sharing and real-time systems, scheduling resource allocation, modular software systems, performance measurement and system evaluation.",
+    relevancy: {
+      date: new Date("2020-09"),
+      display: "Fall 2020",
+    },
+  },
+  {
+    title: "Introduction To Programming Languages And Compilers",
+    descriptiveTitle: "Introduction To Programming Languages And Compilers",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Science 536",
+    subject: "Computer Science",
+    number: "536",
+    description:
+      "Introduction to the theory and practice of compiler design. Comparison of features of several programming languages and their implications for implementation techniques. Several programming projects required.",
+    relevancy: {
+      date: new Date("2020-09"),
+      display: "Fall 2020",
+    },
+  },
+  {
     title: "Machine Organization And Programming",
     descriptiveTitle: "Machine Organization And Programming",
     institute: "UW-Madison",
