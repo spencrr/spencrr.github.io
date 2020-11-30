@@ -44,10 +44,14 @@ export default {
   methods: {
     playPause(val) {
       if (this.$refs.vid) {
-        if ((!this.small && val) || (this.small && this.intersecting)) {
-          this.$refs.vid.play();
-        } else {
-          this.$refs.vid.pause();
+        try {
+          if ((!this.small && val) || (this.small && this.intersecting)) {
+            this.$refs.vid.play();
+          } else {
+            this.$refs.vid.pause();
+          }
+        } catch (e) {
+          // Don't handle exception for play/pause interruption
         }
       }
       return val;
