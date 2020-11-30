@@ -34,7 +34,7 @@
       </v-toolbar-items>
       <v-app-bar-nav-icon @click.stop="toggleDrawer()"></v-app-bar-nav-icon>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <v-container fluid>
         <v-row justify="center" align="center" no-gutters>
           <v-col md="11" cols="12">
@@ -42,7 +42,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-content>
+    </v-main>
     <v-footer app color="accent" class="d-flex justify-center">
       <div>
         <span>Developed in WI</span>
