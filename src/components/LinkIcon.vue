@@ -1,7 +1,13 @@
 <template>
   <v-tooltip bottom>
     <template v-slot:activator="{ on }">
-      <v-btn text fab :href="link.href" target="_blank" v-on="on">
+      <v-btn
+        text
+        fab
+        :href="link.href"
+        target="_blank"
+        v-on="on"
+      >
         <v-img
           :src="src(link)"
           :alt="link.title"
