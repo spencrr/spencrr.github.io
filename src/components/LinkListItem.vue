@@ -1,5 +1,5 @@
 <template>
-  <v-list-item :href="link.href" target="_blank">
+  <v-list-item rel="noreferrer" :href="link.href" target="_blank">
     <v-list-item-icon>
       <v-img
         :src="this.src(link)"

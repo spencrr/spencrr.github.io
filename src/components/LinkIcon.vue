@@ -4,6 +4,7 @@
       <v-btn
         text
         fab
+        rel="noreferrer"
         :href="link.href"
         target="_blank"
         v-on="on"

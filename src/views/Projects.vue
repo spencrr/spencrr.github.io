@@ -28,7 +28,7 @@ export default {
     return {
       projects: projects({
         getAnchorTag(text, href) {
-          return `<a target="_blank" href=${href}>${text}</a>`;
+          return `<a target="_blank" rel="noreferrer" href=${href}>${text}</a>`;
         },
       }),
     };
