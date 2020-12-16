@@ -12,6 +12,7 @@
           </v-col>
           <v-col cols="12">
             <v-btn
+              rel="noreferrer"
               :href="resume.href"
               target="_blank"
               class="ma-3"
