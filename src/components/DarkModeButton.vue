@@ -1,20 +1,27 @@
 <template>
   <v-tooltip top>
     <template v-slot:activator="{ on }">
-      <v-icon v-on="on" @click="toggleDark" class="glow mx-2" color="secondary">
+      <v-icon
+        v-on="on"
+        v-bind:aria-label="buttonText"
+        @click="toggleDark"
+        class="glow mx-2"
+        color="white"
+      >
         {{ mdiDesktopMac }}
       </v-icon>
     </template>
-    <span>Super Secret Dark Mode 😉</span>
+    <span>{{ buttonText }}</span>
   </v-tooltip>
 </template>
 
 <script>
 import { mdiDesktopMac } from "@mdi/js";
+const buttonText = "Super Secret Dark Mode 😉";
 
 export default {
   name: "DarkModeButton",
-  data: () => ({ mdiDesktopMac }),
+  data: () => ({ mdiDesktopMac, buttonText }),
   methods: {
     toggleDark() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;

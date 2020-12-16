@@ -32,7 +32,10 @@
           :src="getSrc"
         />
       </v-toolbar-items>
-      <v-app-bar-nav-icon @click.stop="toggleDrawer()"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        aria-label="Navigation Menu"
+        @click.stop="toggleDrawer()"
+      ></v-app-bar-nav-icon>
     </v-app-bar>
     <v-main>
       <v-container fluid>
@@ -45,7 +48,7 @@
     </v-main>
     <v-footer app color="accent" class="d-flex justify-center">
       <div>
-        <span>Developed in WI</span>
+        <span class="white--text">Developed in WI</span>
         <DarkModeButton />
       </div>
     </v-footer>
