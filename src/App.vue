@@ -18,7 +18,7 @@
         />
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app class="text-uppercase font-weight-bold">
+    <v-app-bar app class="text-uppercase font-weight-bold" id="app-bar">
       <v-spacer v-if="linksInDrawer" />
       <v-toolbar-title>
         <router-link to="/" class="link">Spencer Schoenberg</router-link>
@@ -103,5 +103,10 @@ export default {
   text-decoration: inherit;
   color: inherit;
   overflow: hidden;
+}
+
+#app-bar {
+  backdrop-filter: saturate(2) blur(8px);
+  background-color: rgba(255, 255, 255, 0.65);
 }
 </style>
