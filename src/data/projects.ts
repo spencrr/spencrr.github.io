@@ -77,6 +77,14 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     desc: "",
   },
   {
+    title: "Scattergories",
+    subtitle: "React App for Scattergories in the Browser",
+    href: "https://react-scattergories.herokuapp.com",
+    media: "img",
+    src: () => require("@/assets/scattergories.png"),
+    desc: "React, socket.io, and Express.js powered live scattergories that synchronizes with friends and family!",
+  },
+  {
     title: "And More!",
     subtitle: "On Github!",
     href: "https://github.com/spencrr?tab=repositories",
