@@ -82,7 +82,7 @@ const projects = ({ getAnchorTag }: ProjectConfig): Project[] => [
     href: "https://react-scattergories.herokuapp.com",
     media: "img",
     src: () => require("@/assets/scattergories.png"),
-    desc: "React, socket.io, and Express.js powered live scattergories that synchronizes with friends and family!",
+    desc: "React, socket.io, and Express.js powered live Scattergories that synchronizes with friends and family!",
   },
   {
     title: "And More!",
