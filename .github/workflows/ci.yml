@@ -1,3 +1,4 @@
+name: gh_pages
 on:
   push:
     branches:
