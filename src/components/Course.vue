@@ -14,12 +14,12 @@ import { Course } from "@/data/types";
 import Vue, { PropType } from "vue";
 
 export default Vue.extend({
-  name: "Course",
-  props: {
-    course: {
-      type: Object as () => PropType<Course>,
-      required: true
+    name: "Course",
+    props: {
+        course: {
+            type: Object as () => PropType<Course>,
+            required: true
+        }
     }
-  }
 });
 </script>

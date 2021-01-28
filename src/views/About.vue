@@ -39,36 +39,36 @@ import SectionBlock from "@/components/SectionBlock.vue";
 import Typed from "typed.js";
 
 export default {
-  name: "About",
-  components: { SectionBlock },
-  data() {
-    return {
-      resume: {
-        href: "./resume",
-      },
-      portrait: { src: require("@/assets/me.jpg") },
-    };
-  },
-  mounted() {
-    this.typed = new Typed("#typed", {
-      strings: [
-        "Developer",
-        "Beta Tester",
-        "Maker",
-        "Photographer",
-        "Rocket Enthusiast",
-        "Computer Scientist",
-        "Cryptographer",
-      ],
-      typeSpeed: 30,
-      backSpeed: 30,
-      startDelay: 0,
-      backDelay: 1500,
-      loop: true,
-      shuffle: true,
-      smartBackspace: false,
-    });
-  },
+    name: "About",
+    components: { SectionBlock },
+    data() {
+        return {
+            resume: {
+                href: "./resume",
+            },
+            portrait: { src: require("@/assets/me.jpg") },
+        };
+    },
+    mounted() {
+        this.typed = new Typed("#typed", {
+            strings: [
+                "Developer",
+                "Beta Tester",
+                "Maker",
+                "Photographer",
+                "Rocket Enthusiast",
+                "Computer Scientist",
+                "Cryptographer",
+            ],
+            typeSpeed: 30,
+            backSpeed: 30,
+            startDelay: 0,
+            backDelay: 1500,
+            loop: true,
+            shuffle: true,
+            smartBackspace: false,
+        });
+    },
 };
 </script>
 

@@ -9,26 +9,26 @@ import Coursework from "@/views/Coursework.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "about",
-    component: About,
-  },
-  {
-    path: "/projects",
-    name: "projects",
-    component: Projects,
-  },
-  {
-    path: "/coursework",
-    name: "coursework",
-    component: Coursework,
-  },
+    {
+        path: "/",
+        name: "home",
+        component: Home,
+    },
+    {
+        path: "/about",
+        name: "about",
+        component: About,
+    },
+    {
+        path: "/projects",
+        name: "projects",
+        component: Projects,
+    },
+    {
+        path: "/coursework",
+        name: "coursework",
+        component: Coursework,
+    },
 ];
 
 const router = new VueRouter({ routes });

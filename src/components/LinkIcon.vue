@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: "LinkIcon",
-  props: { link: Object, src: Function, invert: Boolean },
+    name: "LinkIcon",
+    props: { link: Object, src: Function, invert: Boolean },
 };
 </script>

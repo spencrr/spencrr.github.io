@@ -22,16 +22,16 @@ import SectionBlock from "@/components/SectionBlock.vue";
 import projects from "@/data/projects";
 
 export default {
-  name: "Projects",
-  components: { Project, SectionBlock },
-  data() {
-    return {
-      projects: projects({
-        getAnchorTag(text, href) {
-          return `<a target="_blank" rel="noreferrer" href=${href}>${text}</a>`;
-        },
-      }),
-    };
-  },
+    name: "Projects",
+    components: { Project, SectionBlock },
+    data() {
+        return {
+            projects: projects({
+                getAnchorTag(text, href) {
+                    return `<a target="_blank" rel="noreferrer" href=${href}>${text}</a>`;
+                },
+            }),
+        };
+    },
 };
 </script>

@@ -30,20 +30,20 @@ import Course from "@/components/Course.vue";
 import courses, { sorts } from "@/data/courses";
 
 export default Vue.extend({
-  name: "Coursework",
-  components: { SectionBlock, Course },
-  data() {
-    return {
-      courses,
-      sorts: sorts.map((v, i) => ({ text: v.display, value: i })),
-      selectedSort: 0,
-    };
-  },
-  computed: {
-    sortedCourses() {
-      if (this.selectedSort == null) return this.courses;
-      return Array.from(this.courses).sort(sorts[this.selectedSort].compareTo);
+    name: "Coursework",
+    components: { SectionBlock, Course },
+    data() {
+        return {
+            courses,
+            sorts: sorts.map((v, i) => ({ text: v.display, value: i })),
+            selectedSort: 0,
+        };
     },
-  },
+    computed: {
+        sortedCourses() {
+            if (this.selectedSort == null) return this.courses;
+            return Array.from(this.courses).sort(sorts[this.selectedSort].compareTo);
+        },
+    },
 });
 </script>

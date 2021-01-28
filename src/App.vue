@@ -65,26 +65,26 @@ import { sections } from "@/views/Home.vue";
 import links from "@/data/links";
 
 export default {
-  name: "App",
-  components: { LinkIcon, LinkListItem, SectionListItem, DarkModeButton },
-  data: () => ({
-    drawer: false,
-    links,
-    sections,
-  }),
-  methods: {
-    getSrc(link) {
-      return require(`@/assets/${link.src}`);
+    name: "App",
+    components: { LinkIcon, LinkListItem, SectionListItem, DarkModeButton },
+    data: () => ({
+        drawer: false,
+        links,
+        sections,
+    }),
+    methods: {
+        getSrc(link) {
+            return require(`@/assets/${link.src}`);
+        },
+        toggleDrawer() {
+            this.drawer = !this.drawer;
+        },
     },
-    toggleDrawer() {
-      this.drawer = !this.drawer;
+    computed: {
+        linksInDrawer() {
+            return this.$vuetify.breakpoint.xs;
+        },
     },
-  },
-  computed: {
-    linksInDrawer() {
-      return this.$vuetify.breakpoint.xs;
-    },
-  },
 };
 </script>
 
@@ -96,6 +96,7 @@ export default {
 .no-wrap {
   word-break: break-word;
 }
+
 </style>
 
 <style scoped>
