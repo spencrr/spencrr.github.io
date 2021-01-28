@@ -1,18 +1,18 @@
 <template>
-  <v-tooltip top>
-    <template v-slot:activator="{ on }">
-      <v-icon
-        v-on="on"
-        v-bind:aria-label="buttonText"
-        @click="toggleDark"
-        class="glow mx-2"
-        color="white"
-      >
-        {{ mdiDesktopMac }}
-      </v-icon>
-    </template>
-    <span>{{ buttonText }}</span>
-  </v-tooltip>
+    <v-tooltip top>
+        <template v-slot:activator="{ on }">
+            <v-icon
+                v-on="on"
+                v-bind:aria-label="buttonText"
+                @click="toggleDark"
+                class="glow mx-2"
+                color="white"
+            >
+                {{ mdiDesktopMac }}
+            </v-icon>
+        </template>
+        <span>{{ buttonText }}</span>
+    </v-tooltip>
 </template>
 
 <script>
@@ -32,12 +32,12 @@ export default {
 
 <style>
 .glow {
-  animation: beat 1s ease-in-out infinite alternate;
+    animation: beat 1s ease-in-out infinite alternate;
 }
 
 @keyframes beat {
-  to {
-    transform: scale(1.25);
-  }
+    to {
+        transform: scale(1.25);
+    }
 }
 </style>

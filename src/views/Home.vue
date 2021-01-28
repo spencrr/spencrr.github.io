@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div v-for="(section, index) in sections" :key="index">
-      <v-divider v-if="index != 0" />
-      <component :is="section" class="py-5" :id="section" />
+    <div>
+        <div v-for="(section, index) in sections" :key="index">
+            <v-divider v-if="index != 0" />
+            <component :is="section" class="py-5" :id="section" />
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

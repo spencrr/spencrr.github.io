@@ -1,58 +1,65 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app right v-model="drawer" temporary>
-      <v-list>
-        <SectionListItem
-          v-for="(section, index) in sections"
-          :key="index"
-          :section="section"
-          @click="toggleDrawer()"
-        />
-      </v-list>
-      <v-list v-if="linksInDrawer">
-        <LinkListItem
-          v-for="(link, index) in links"
-          :key="index"
-          :link="link"
-          :src="getSrc"
-        />
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar app class="text-uppercase font-weight-bold" :class="{blur:!$vuetify.theme.dark}" id="app-bar">
-      <v-spacer v-if="linksInDrawer" />
-      <v-toolbar-title>
-        <router-link to="/" class="link">Spencer Schoenberg</router-link>
-      </v-toolbar-title>
-      <v-spacer />
-      <v-toolbar-items v-if="!linksInDrawer" class="links">
-        <LinkIcon
-          v-for="(link, index) in links"
-          :key="index"
-          :link="link"
-          :src="getSrc"
-        />
-      </v-toolbar-items>
-      <v-app-bar-nav-icon
-        aria-label="Navigation Menu"
-        @click.stop="toggleDrawer()"
-      ></v-app-bar-nav-icon>
-    </v-app-bar>
-    <v-main>
-      <v-container fluid>
-        <v-row justify="center" align="center" no-gutters>
-          <v-col md="11" cols="12">
-            <router-view></router-view>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
-    <v-footer app color="accent" class="d-flex justify-center">
-      <div>
-        <span class="white--text">Developed in WI</span>
-        <DarkModeButton />
-      </div>
-    </v-footer>
-  </v-app>
+    <v-app>
+        <v-navigation-drawer app right v-model="drawer" temporary>
+            <v-list>
+                <SectionListItem
+                    v-for="(section, index) in sections"
+                    :key="index"
+                    :section="section"
+                    @click="toggleDrawer()"
+                />
+            </v-list>
+            <v-list v-if="linksInDrawer">
+                <LinkListItem
+                    v-for="(link, index) in links"
+                    :key="index"
+                    :link="link"
+                    :src="getSrc"
+                />
+            </v-list>
+        </v-navigation-drawer>
+        <v-app-bar
+            app
+            class="text-uppercase font-weight-bold"
+            :class="{ blur: !$vuetify.theme.dark }"
+            id="app-bar"
+        >
+            <v-spacer v-if="linksInDrawer" />
+            <v-toolbar-title>
+                <router-link to="/" class="link"
+                    >Spencer Schoenberg</router-link
+                >
+            </v-toolbar-title>
+            <v-spacer />
+            <v-toolbar-items v-if="!linksInDrawer" class="links">
+                <LinkIcon
+                    v-for="(link, index) in links"
+                    :key="index"
+                    :link="link"
+                    :src="getSrc"
+                />
+            </v-toolbar-items>
+            <v-app-bar-nav-icon
+                aria-label="Navigation Menu"
+                @click.stop="toggleDrawer()"
+            ></v-app-bar-nav-icon>
+        </v-app-bar>
+        <v-main>
+            <v-container fluid>
+                <v-row justify="center" align="center" no-gutters>
+                    <v-col md="11" cols="12">
+                        <router-view></router-view>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-main>
+        <v-footer app color="accent" class="d-flex justify-center">
+            <div>
+                <span class="white--text">Developed in WI</span>
+                <DarkModeButton />
+            </div>
+        </v-footer>
+    </v-app>
 </template>
 
 <script>
@@ -90,24 +97,23 @@ export default {
 
 <style>
 .invert {
-  filter: invert(1);
+    filter: invert(1);
 }
 
 .no-wrap {
-  word-break: break-word;
+    word-break: break-word;
 }
-
 </style>
 
 <style scoped>
 .link {
-  text-decoration: inherit;
-  color: inherit;
-  overflow: hidden;
+    text-decoration: inherit;
+    color: inherit;
+    overflow: hidden;
 }
 
 #app-bar.blur {
-  backdrop-filter: saturate(2) blur(8px);
-  background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: saturate(2) blur(8px);
+    background-color: rgba(255, 255, 255, 0.65);
 }
 </style>
