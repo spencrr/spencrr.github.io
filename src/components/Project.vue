@@ -1,37 +1,37 @@
 <template>
-  <v-hover v-slot:default="{ hover }">
-    <v-card
-      :href="project.href"
-      :raised="playPause(hover)"
-      height="100%"
-      class="d-flex flex-column text-left"
-    >
-      <v-card-title class="no-wrap" v-text="project.title" />
-      <v-card-subtitle v-text="project.subtitle" />
+    <v-hover v-slot:default="{ hover }">
+        <v-card
+            :href="project.href"
+            :raised="playPause(hover)"
+            height="100%"
+            class="d-flex flex-column text-left"
+        >
+            <v-card-title class="no-wrap" v-text="project.title" />
+            <v-card-subtitle v-text="project.subtitle" />
 
-      <v-img
-        v-if="img"
-        :src="project.src()"
-        width="40%"
-        class="align-self-center"
-        contain
-      />
-      <div>
-        <video
-          v-if="vid"
-          :src="project.src()"
-          ref="vid"
-          v-intersect="onIntersect"
-          loop
-          muted
-          playsinline
-          @mouseenter="playPause(true)"
-          @mouseleave="playPause(false)"
-        />
-      </div>
-      <v-card-text class="text-justify" v-html="project.desc" />
-    </v-card>
-  </v-hover>
+            <v-img
+                v-if="img"
+                :src="project.src()"
+                width="40%"
+                class="align-self-center"
+                contain
+            />
+            <div>
+                <video
+                    v-if="vid"
+                    :src="project.src()"
+                    ref="vid"
+                    v-intersect="onIntersect"
+                    loop
+                    muted
+                    playsinline
+                    @mouseenter="playPause(true)"
+                    @mouseleave="playPause(false)"
+                />
+            </div>
+            <v-card-text class="text-justify" v-html="project.desc" />
+        </v-card>
+    </v-hover>
 </template>
 
 <script>
@@ -45,7 +45,10 @@ export default {
         playPause(val) {
             if (this.$refs.vid) {
                 try {
-                    if ((!this.small && val) || (this.small && this.intersecting)) {
+                    if (
+                        (!this.small && val) ||
+                        (this.small && this.intersecting)
+                    ) {
                         this.$refs.vid.play();
                     } else {
                         this.$refs.vid.pause();
@@ -78,7 +81,7 @@ export default {
 
 <style>
 video {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 </style>
