@@ -18,7 +18,7 @@
         />
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app class="text-uppercase font-weight-bold" id="app-bar">
+    <v-app-bar app class="text-uppercase font-weight-bold" :class="{blur:!$vuetify.theme.dark}" id="app-bar">
       <v-spacer v-if="linksInDrawer" />
       <v-toolbar-title>
         <router-link to="/" class="link">Spencer Schoenberg</router-link>
@@ -106,7 +106,7 @@ export default {
   overflow: hidden;
 }
 
-#app-bar {
+#app-bar.blur {
   backdrop-filter: saturate(2) blur(8px);
   background-color: rgba(255, 255, 255, 0.65);
 }
