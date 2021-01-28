@@ -36,43 +36,43 @@
 
 <script>
 export default {
-  name: "Project",
-  props: { project: Object },
-  data() {
-    return { intersecting: false };
-  },
-  methods: {
-    playPause(val) {
-      if (this.$refs.vid) {
-        try {
-          if ((!this.small && val) || (this.small && this.intersecting)) {
-            this.$refs.vid.play();
-          } else {
-            this.$refs.vid.pause();
-          }
-        } catch (e) {
-          // Don't handle exception for play/pause interruption
-        }
-      }
-      return val;
+    name: "Project",
+    props: { project: Object },
+    data() {
+        return { intersecting: false };
     },
+    methods: {
+        playPause(val) {
+            if (this.$refs.vid) {
+                try {
+                    if ((!this.small && val) || (this.small && this.intersecting)) {
+                        this.$refs.vid.play();
+                    } else {
+                        this.$refs.vid.pause();
+                    }
+                } catch (e) {
+                    // Don't handle exception for play/pause interruption
+                }
+            }
+            return val;
+        },
 
-    onIntersect(entries) {
-      this.intersecting = entries[0].isIntersecting;
-      this.playPause();
+        onIntersect(entries) {
+            this.intersecting = entries[0].isIntersecting;
+            this.playPause();
+        },
     },
-  },
-  computed: {
-    small() {
-      return this.$vuetify.breakpoint.smAndDown;
+    computed: {
+        small() {
+            return this.$vuetify.breakpoint.smAndDown;
+        },
+        img() {
+            return this.project.media === "img";
+        },
+        vid() {
+            return this.project.media === "vid";
+        },
     },
-    img() {
-      return this.project.media === "img";
-    },
-    vid() {
-      return this.project.media === "vid";
-    },
-  },
 };
 </script>
 

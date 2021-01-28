@@ -16,9 +16,9 @@ const components = { About, Projects, Coursework };
 const sections = Object.keys(components);
 
 export default {
-  name: "Home",
-  components,
-  data: () => ({ sections }),
+    name: "Home",
+    components,
+    data: () => ({ sections }),
 };
 export { sections };
 </script>

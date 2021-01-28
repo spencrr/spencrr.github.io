@@ -20,13 +20,13 @@ import { mdiDesktopMac } from "@mdi/js";
 const buttonText = "Super Secret Dark Mode 😉";
 
 export default {
-  name: "DarkModeButton",
-  data: () => ({ mdiDesktopMac, buttonText }),
-  methods: {
-    toggleDark() {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+    name: "DarkModeButton",
+    data: () => ({ mdiDesktopMac, buttonText }),
+    methods: {
+        toggleDark() {
+            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+        },
     },
-  },
 };
 </script>
 

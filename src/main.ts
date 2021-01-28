@@ -8,7 +8,7 @@ Vue.config.performance = true;
 // Vue.config.prettify = false;
 
 new Vue({
-  vuetify,
-  router,
-  render: h => h(App),
+    vuetify,
+    router,
+    render: h => h(App),
 }).$mount("#app");

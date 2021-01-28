@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "LinkListItem",
-  props: { link: Object, src: Function, invert: Boolean },
+    name: "LinkListItem",
+    props: { link: Object, src: Function, invert: Boolean },
 };
 </script>

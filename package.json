@@ -1,66 +1,74 @@
 {
-  "name": "portfolio",
-  "version": "0.1.2",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "@mdi/js": "^4.7.95",
-    "core-js": "^3.6.5",
-    "elliptic": "^6.5.3",
-    "serialize-javascript": "^4.0.0",
-    "typed.js": "^2.0.11",
-    "vue": "^2.6.12",
-    "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^8.5.1",
-    "vue-router": "^3.4.5",
-    "vuetify": "^2.3.10"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.8",
-    "@vue/cli-plugin-eslint": "^4.5.8",
-    "@vue/cli-plugin-router": "^4.5.8",
-    "@vue/cli-plugin-typescript": "^4.5.8",
-    "@vue/cli-service": "^4.5.8",
-    "@vue/eslint-config-typescript": "^4.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "sass": "^1.27.0",
-    "sass-loader": "^8.0.2",
-    "typescript": "~3.5.3",
-    "vue-cli-plugin-vuetify": "^1.1.2",
-    "vue-template-compiler": "^2.6.12",
-    "vuetify-loader": "^1.6.0",
-    "websocket-extensions": ">=0.1.4"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "portfolio",
+    "version": "0.1.2",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/typescript"
-    ],
-    "rules": {
-      "no-console": "warn"
+    "dependencies": {
+        "@mdi/js": "^4.7.95",
+        "core-js": "^3.6.5",
+        "elliptic": "^6.5.3",
+        "serialize-javascript": "^4.0.0",
+        "typed.js": "^2.0.11",
+        "vue": "^2.6.12",
+        "vue-class-component": "^7.2.6",
+        "vue-property-decorator": "^8.5.1",
+        "vue-router": "^3.4.5",
+        "vuetify": "^2.3.10"
     },
-    "parserOptions": {
-      "parser": "@typescript-eslint/parser"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.5.8",
+        "@vue/cli-plugin-eslint": "^4.5.8",
+        "@vue/cli-plugin-router": "^4.5.8",
+        "@vue/cli-plugin-typescript": "^4.5.8",
+        "@vue/cli-service": "^4.5.8",
+        "@vue/eslint-config-typescript": "^4.0.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^5.16.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "sass": "^1.27.0",
+        "sass-loader": "^8.0.2",
+        "typescript": "~3.5.3",
+        "vue-cli-plugin-vuetify": "^1.1.2",
+        "vue-template-compiler": "^2.6.12",
+        "vuetify-loader": "^1.6.0",
+        "websocket-extensions": ">=0.1.4"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended",
+            "@vue/typescript"
+        ],
+        "rules": {
+            "no-console": "warn",
+            "semi": [
+                "error",
+                "always"
+            ],
+            "indent": [
+                "error",
+                4
+            ]
+        },
+        "parserOptions": {
+            "parser": "@typescript-eslint/parser"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ]
 }

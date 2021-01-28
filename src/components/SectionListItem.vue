@@ -8,15 +8,15 @@
 
 <script>
 export default {
-  name: "SectionListItem",
-  props: {
-    section: String,
-  },
-  methods: {
-    click() {
-      this.$vuetify.goTo(`#${this.section}`);
-      this.$emit("click");
+    name: "SectionListItem",
+    props: {
+        section: String,
     },
-  },
+    methods: {
+        click() {
+            this.$vuetify.goTo(`#${this.section}`);
+            this.$emit("click");
+        },
+    },
 };
 </script>
