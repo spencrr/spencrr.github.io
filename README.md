@@ -1,4 +1,4 @@
-![Build Status](https://github.com/spencrr/spencrr.github.io/workflows/gh_pages/badge.svg)
+[![gh_pages](https://github.com/spencrr/spencrr.github.io/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/spencrr/spencrr.github.io/actions/workflows/ci.yml)
 
 # spencrr.github.io
 
