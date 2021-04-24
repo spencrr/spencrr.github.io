@@ -1,6 +1,5 @@
 export interface Course {
     title: string;
-    descriptiveTitle: string;
     institute: string;
     display?: string;
     subject: string;
@@ -33,5 +32,5 @@ export interface Project {
 }
 
 export interface ProjectConfig {
-     getAnchorTag: (text: string, href: string) => string;
+    getAnchorTag: (text: string, href: string) => string;
 }
