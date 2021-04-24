@@ -3,7 +3,6 @@ import { Course, CourseSort } from "./types";
 const courses: Course[] = [
     {
         title: "Introduction To Algorithms",
-        descriptiveTitle: "Introduction To Algorithms",
         institute: "UW-Madison",
         display: "UW-Madison Computer Sciences 577",
         subject: "Computer Sciences",
@@ -17,7 +16,6 @@ const courses: Course[] = [
     },
     {
         title: "Data Programming II",
-        descriptiveTitle: "Data Programming II",
         institute: "UW-Madison",
         display: "UW-Madison Computer Sciences 320",
         subject: "Computer Sciences",
@@ -31,7 +29,6 @@ const courses: Course[] = [
     },
     {
         title: "Introduction To Data Modeling I",
-        descriptiveTitle: "Introduction To Data Modeling I",
         institute: "UW-Madison",
         display: "UW-Madison Statistics 240",
         subject: "Statistics",
@@ -45,7 +42,6 @@ const courses: Course[] = [
     },
     {
         title: "Introduction To Probability And Mathematical Statistics I",
-        descriptiveTitle: "Introduction To Probability And Mathematical Statistics I",
         institute: "UW-Madison",
         display: "UW-Madison Statistics 309",
         subject: "Statistics",
@@ -59,7 +55,6 @@ const courses: Course[] = [
     },
     {
         title: "Introduction To Bioinformatics",
-        descriptiveTitle: "Introduction To Bioinformatics",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 576",
         subject: "Computer Science",
@@ -73,7 +68,6 @@ const courses: Course[] = [
     },
     {
         title: "Introduction To Artificial Intelligence",
-        descriptiveTitle: "Introduction To Artificial Intelligence",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 540",
         subject: "Computer Science",
@@ -87,7 +81,6 @@ const courses: Course[] = [
     },
     {
         title: "Introduction To Operating Systems",
-        descriptiveTitle: "Introduction To Operating Systems",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 537",
         subject: "Computer Science",
@@ -101,7 +94,6 @@ const courses: Course[] = [
     },
     {
         title: "Introduction To Programming Languages And Compilers",
-        descriptiveTitle: "Introduction To Programming Languages And Compilers",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 536",
         subject: "Computer Science",
@@ -115,7 +107,6 @@ const courses: Course[] = [
     },
     {
         title: "Machine Organization And Programming",
-        descriptiveTitle: "Machine Organization And Programming",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 354",
         subject: "Computer Science",
@@ -129,7 +120,6 @@ const courses: Course[] = [
     },
     {
         title: "Programming III",
-        descriptiveTitle: "Programming III",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 400",
         subject: "Computer Science",
@@ -142,8 +132,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction to Computer Engineering",
-        descriptiveTitle: "Introduction To Computer Engineering",
+        title: "Introduction To Computer Engineering",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 252",
         subject: "Computer Science",
@@ -156,8 +145,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction to Discrete Mathematics",
-        descriptiveTitle: "Introduction To Discrete Mathematics",
+        title: "Introduction To Discrete Mathematics",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 240",
         subject: "Computer Science",
@@ -170,8 +158,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Programming II",
-        descriptiveTitle:
+        title:
             "Abstract Data Structures and Object-Oriented Programming in Java",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 300",
@@ -185,8 +172,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction to Cryptography",
-        descriptiveTitle: "Introduction To Cryptography",
+        title: "Introduction To Cryptography",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 435",
         subject: "Computer Science",
@@ -200,7 +186,6 @@ const courses: Course[] = [
     },
     {
         title: "Linear Algebra",
-        descriptiveTitle: "Linear Algebra",
         institute: "Milwaukee School of Engineering",
         display: "MSOE Math 383",
         subject: "Math",
@@ -213,8 +198,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Calculus IV",
-        descriptiveTitle: "Multivariable Calculus",
+        title: "Multivariable Calculus",
         institute: "Milwaukee School of Engineering",
         display: "MSOE Math 232",
         subject: "Math",
@@ -227,8 +211,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Programming Abstractions",
-        descriptiveTitle: "Abstract Data Structures in C++",
+        title: "Abstract Data Structures in C++",
         institute: "Stanford",
         display: "Stanford Computer Science 106B",
         subject: "Computer Science",
@@ -242,7 +225,6 @@ const courses: Course[] = [
     },
     {
         title: "Introduction to Scientific Computing",
-        descriptiveTitle: "Introduction to Scientific Computing",
         institute: "Stanford",
         display: "Stanford Computational & Mathematical Engineering 108",
         subject: "Computer Science",
@@ -256,7 +238,6 @@ const courses: Course[] = [
     },
     {
         title: "Client-Side Internet Technologies",
-        descriptiveTitle: "Client-Side Internet Technologies",
         institute: "Stanford",
         display: "Stanford Computer Science 193C",
         subject: "Computer Science",
@@ -270,7 +251,6 @@ const courses: Course[] = [
     },
     {
         title: "AP Computer Science A",
-        descriptiveTitle: "AP Computer Science A",
         institute: "Cedarburg High School",
         subject: "Computer Science",
         number: "100",
