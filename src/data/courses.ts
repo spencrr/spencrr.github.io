@@ -2,7 +2,7 @@ import { Course, CourseSort } from "./types";
 
 const courses: Course[] = [
     {
-        title: "Introduction To Algorithms",
+        title: "Introduction to Algorithms",
         institute: "UW-Madison",
         display: "UW-Madison Computer Sciences 577",
         subject: "Computer Sciences",
@@ -28,7 +28,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Data Modeling I",
+        title: "Introduction to Data Modeling I",
         institute: "UW-Madison",
         display: "UW-Madison Statistics 240",
         subject: "Statistics",
@@ -41,7 +41,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Probability And Mathematical Statistics I",
+        title: "Introduction to Probability and Mathematical Statistics I",
         institute: "UW-Madison",
         display: "UW-Madison Statistics 309",
         subject: "Statistics",
@@ -54,7 +54,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Bioinformatics",
+        title: "Introduction to Bioinformatics",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 576",
         subject: "Computer Science",
@@ -67,7 +67,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Artificial Intelligence",
+        title: "Introduction to Artificial Intelligence",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 540",
         subject: "Computer Science",
@@ -80,7 +80,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Operating Systems",
+        title: "Introduction to Operating Systems",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 537",
         subject: "Computer Science",
@@ -93,7 +93,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Programming Languages And Compilers",
+        title: "Introduction to Programming Languages and Compilers",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 536",
         subject: "Computer Science",
@@ -106,7 +106,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Machine Organization And Programming",
+        title: "Machine Organization and Programming",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 354",
         subject: "Computer Science",
@@ -132,7 +132,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Computer Engineering",
+        title: "Introduction to Computer Engineering",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 252",
         subject: "Computer Science",
@@ -145,7 +145,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Discrete Mathematics",
+        title: "Introduction to Discrete Mathematics",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 240",
         subject: "Computer Science",
@@ -172,7 +172,7 @@ const courses: Course[] = [
         },
     },
     {
-        title: "Introduction To Cryptography",
+        title: "Introduction to Cryptography",
         institute: "UW-Madison",
         display: "UW-Madison Computer Science 435",
         subject: "Computer Science",
