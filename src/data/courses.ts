@@ -2,6 +2,58 @@ import { Course, CourseSort } from "./types";
 
 const courses: Course[] = [
     {
+        title: "Computer Graphics",
+        institute: "UW-Madison",
+        display: "UW-Madison Computer Sciences 559",
+        subject: "Computer Science",
+        number: "559",
+        description:
+            "Survey of computer graphics. Image representation, formation, presentation, composition and manipulation. Modeling, transformation, and display of geometric objects in two and three dimensions. Representation of curves and surfaces. Rendering, animation, multi-media and visualization.",
+        relevancy: {
+            date: new Date("2021-09"),
+            display: "Fall 2021",
+        },
+    },
+    {
+        title: "Introduction to Artificial Neural Networks",
+        institute: "UW-Madison",
+        display: "UW-Madison Computer Sciences 539",
+        subject: "Computer Science",
+        number: "539",
+        description:
+            "Introduction to principles of advanced programming languages and programming-language theory. Topics include: lambda-calculus, functional languages, polymorphic functions, type inference, structural induction, lazy evaluation, operational semantics, denotational semantics, and axiomatic semantics.",
+        relevancy: {
+            date: new Date("2021-09"),
+            display: "Fall 2021",
+        },
+    },
+    {
+        title: "Data and Algorithms: Ethics and Policy",
+        institute: "UW-Madison",
+        display: "UW-Madison Library & Information Studies 461",
+        subject: "Library & Information Studies",
+        number: "461",
+        description:
+            "An introduction to ethical, legal and policy issues related to analytics, 'big data' and algorithms to support decision making. Gain familiarity with major debates and controversies in a variety of contexts. Critically analyze course materials and apply moral reasoning and legal concepts to assess case studies and critique arguments made by others.",
+        relevancy: {
+            date: new Date("2021-09"),
+            display: "Fall 2021",
+        },
+    },
+    {
+        title: "Introduction to Data Modeling II",
+        institute: "UW-Madison",
+        display: "UW-Madison Statistics 340",
+        subject: "Statistics",
+        number: "340",
+        description:
+            "Teaches students to apply statistical methods to learn from data. Topics include one- and two-sample inference; an introduction to Bayesian inference and associated probability theory; linear and logistic regression models; the bootstrap; and cross-validation. Students use an integrated statistical computing environment to explore and analyze data, develop models, make inferences, and communicate results in a reproducible manner through a project-oriented approach to learning.",
+        relevancy: {
+            date: new Date("2021-09"),
+            display: "Fall 2021",
+        },
+    },
+    {
         title: "Introduction to Algorithms",
         institute: "UW-Madison",
         display: "UW-Madison Computer Sciences 577",
