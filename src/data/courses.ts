@@ -57,7 +57,7 @@ const courses: Course[] = [
         title: "Introduction to Algorithms",
         institute: "UW-Madison",
         display: "UW-Madison Computer Sciences 577",
-        subject: "Computer Sciences",
+        subject: "Computer Science",
         number: "577",
         description:
             "Basic paradigms for the design and analysis of efficient algorithms: greed, divide-and-conquer, dynamic programming, reductions, and the use of randomness. Computational intractability including typical NP-complete problems and ways to deal with them.",
@@ -70,7 +70,7 @@ const courses: Course[] = [
         title: "Data Programming II",
         institute: "UW-Madison",
         display: "UW-Madison Computer Sciences 320",
-        subject: "Computer Sciences",
+        subject: "Computer Science",
         number: "320",
         description:
             "Intermediate approach to Data Science programming using Python. Experience with basic tabular analysis in Python is assumed. Learn to implement data structures (e.g., graphs) to efficiently represent datasets. Software-engineering tools such as version control and Python virtual environments will be introduced, with an emphasis on reproducibility of analysis. Tracing and A/B testing will be introduced as techniques for generating meaningful datasets. Introduces basic classification, clustering, optimization, and simulation techniques. Plotting and visual communication will be emphasized throughout the course. Recommended for Data Science majors and other majors.",
@@ -108,7 +108,7 @@ const courses: Course[] = [
     {
         title: "Introduction to Bioinformatics",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 576",
+        display: "UW-Madison Computer Sciences 576",
         subject: "Computer Science",
         number: "576",
         description:
@@ -121,7 +121,7 @@ const courses: Course[] = [
     {
         title: "Introduction to Artificial Intelligence",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 540",
+        display: "UW-Madison Computer Sciences 540",
         subject: "Computer Science",
         number: "540",
         description:
@@ -134,7 +134,7 @@ const courses: Course[] = [
     {
         title: "Introduction to Operating Systems",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 537",
+        display: "UW-Madison Computer Sciences 537",
         subject: "Computer Science",
         number: "537",
         description:
@@ -147,7 +147,7 @@ const courses: Course[] = [
     {
         title: "Introduction to Programming Languages and Compilers",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 536",
+        display: "UW-Madison Computer Sciences 536",
         subject: "Computer Science",
         number: "536",
         description:
@@ -160,7 +160,7 @@ const courses: Course[] = [
     {
         title: "Machine Organization and Programming",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 354",
+        display: "UW-Madison Computer Sciences 354",
         subject: "Computer Science",
         number: "354",
         description:
@@ -173,7 +173,7 @@ const courses: Course[] = [
     {
         title: "Programming III",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 400",
+        display: "UW-Madison Computer Sciences 400",
         subject: "Computer Science",
         number: "400",
         description:
@@ -186,7 +186,7 @@ const courses: Course[] = [
     {
         title: "Introduction to Computer Engineering",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 252",
+        display: "UW-Madison Computer Sciences 252",
         subject: "Computer Science",
         number: "252",
         description:
@@ -199,7 +199,7 @@ const courses: Course[] = [
     {
         title: "Introduction to Discrete Mathematics",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 240",
+        display: "UW-Madison Computer Sciences 240",
         subject: "Computer Science",
         number: "240",
         description:
@@ -213,7 +213,7 @@ const courses: Course[] = [
         title:
             "Abstract Data Structures and Object-Oriented Programming in Java",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 300",
+        display: "UW-Madison Computer Sciences 300",
         subject: "Computer Science",
         number: "300",
         description:
@@ -226,7 +226,7 @@ const courses: Course[] = [
     {
         title: "Introduction to Cryptography",
         institute: "UW-Madison",
-        display: "UW-Madison Computer Science 435",
+        display: "UW-Madison Computer Sciences 435",
         subject: "Computer Science",
         number: "435",
         description:
