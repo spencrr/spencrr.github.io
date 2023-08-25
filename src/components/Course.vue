@@ -1,30 +1,23 @@
 <template>
-    <v-expansion-panel>
-        <v-expansion-panel-header
-            ripple
-            class="font-weight-medium"
-            hide-actions
-            >{{ course.title }}</v-expansion-panel-header
-        >
-        <v-expansion-panel-content>
-            <p v-if="course.display">{{ course.display }}</p>
-            <p>{{ course.description }}</p>
-            <p>{{ course.relevancy.display }}</p>
-        </v-expansion-panel-content>
-    </v-expansion-panel>
+  <v-expansion-panel>
+    <v-expansion-panel-title ripple class="font-weight-medium" hide-actions>{{
+      course.title
+    }}</v-expansion-panel-title>
+    <v-expansion-panel-text>
+      <p v-if="course.display">{{ course.display }}</p>
+      <p>{{ course.description }}</p>
+      <p>{{ course.relevancy.display }}</p>
+    </v-expansion-panel-text>
+  </v-expansion-panel>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { Course } from "@/data/types";
-import Vue, { PropType } from "vue";
 
-export default Vue.extend({
-    name: "Course",
-    props: {
-        course: {
-            type: Object as () => PropType<Course>,
-            required: true,
-        },
-    },
+defineProps({
+  course: {
+    type: Object as () => Course,
+    required: true,
+  },
 });
 </script>

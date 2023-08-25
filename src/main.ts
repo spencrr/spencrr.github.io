@@ -1,14 +1,9 @@
-import Vue from "vue";
 import App from "./App.vue";
-import vuetify from "./plugins/vuetify";
-import router from "./plugins/router";
+import { createApp } from "vue";
+import { registerPlugins } from "@/plugins";
 
-Vue.config.productionTip = false;
-Vue.config.performance = true;
-// Vue.config.prettify = false;
+const app = createApp(App);
 
-new Vue({
-    vuetify,
-    router,
-    render: h => h(App),
-}).$mount("#app");
+registerPlugins(app);
+
+app.mount("#app");

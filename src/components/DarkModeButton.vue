@@ -1,43 +1,39 @@
 <template>
-    <v-tooltip top>
-        <template v-slot:activator="{ on }">
-            <v-icon
-                v-on="on"
-                v-bind:aria-label="buttonText"
-                @click="toggleDark"
-                class="glow mx-2"
-                color="white"
-            >
-                {{ mdiDesktopMac }}
-            </v-icon>
-        </template>
-        <span>{{ buttonText }}</span>
-    </v-tooltip>
+  <v-tooltip top>
+    <template v-slot:activator="{ props }">
+      <v-icon
+        :icon="mdiHeart"
+        v-on="props"
+        v-bind:aria-label="buttonText"
+        @click="toggleDark"
+        class="glow mx-2"
+        color="white"
+      />
+    </template>
+    <!-- <span>{{ buttonText }}</span> -->
+  </v-tooltip>
 </template>
 
-<script>
-import { mdiDesktopMac } from "@mdi/js";
+<script lang="ts" setup>
+import { mdiHeart } from "@mdi/js";
+import { useTheme } from "vuetify/lib/framework.mjs";
 const buttonText = "Super Secret Dark Mode 😉";
 
-export default {
-    name: "DarkModeButton",
-    data: () => ({ mdiDesktopMac, buttonText }),
-    methods: {
-        toggleDark() {
-            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-        },
-    },
-};
+const { global: globalTheme } = useTheme();
+
+function toggleDark() {
+  globalTheme.name.value = globalTheme.current.value.dark ? "light" : "dark";
+}
 </script>
 
 <style>
 .glow {
-    animation: beat 1s ease-in-out infinite alternate;
+  animation: beat 1s ease-in-out infinite alternate;
 }
 
 @keyframes beat {
-    to {
-        transform: scale(1.25);
-    }
+  to {
+    transform: scale(1.25);
+  }
 }
 </style>

@@ -1,87 +1,92 @@
 <template>
-    <v-hover v-slot:default="{ hover }">
-        <v-card
-            :href="project.href"
-            :raised="playPause(hover)"
-            height="100%"
-            class="d-flex flex-column text-left"
-        >
-            <v-card-title class="no-wrap" v-text="project.title" />
-            <v-card-subtitle v-text="project.subtitle" />
+  <v-hover v-slot:default="{ isHovering }">
+    <v-card
+      :href="project.href"
+      :raised="playPause(isHovering ?? false)"
+      height="100%"
+      class="d-flex flex-column text-left"
+    >
+      <v-card-title class="no-wrap" v-text="project.title" />
+      <v-card-subtitle v-text="project.subtitle" />
 
-            <v-img
-                v-if="img"
-                :src="project.src()"
-                width="40%"
-                class="align-self-center"
-                contain
-            />
-            <div>
-                <video
-                    v-if="vid"
-                    :src="project.src()"
-                    ref="vid"
-                    v-intersect="onIntersect"
-                    loop
-                    muted
-                    playsinline
-                    @mouseenter="playPause(true)"
-                    @mouseleave="playPause(false)"
-                />
-            </div>
-            <v-card-text class="text-justify" v-html="project.desc" />
-        </v-card>
-    </v-hover>
+      <v-img
+        v-if="isImg"
+        :src="project.src"
+        width="40%"
+        class="align-self-center mt-4"
+        :class="{ invert: project.shouldInvert === true && isDark }"
+        contain
+      />
+      <div>
+        <video
+          v-if="isVid"
+          class="mt-4"
+          :src="project.src"
+          ref="vid"
+          v-intersect="onIntersect"
+          loop
+          muted
+          playsinline
+          @mouseenter="playPause(true)"
+          @mouseleave="playPause(false)"
+        />
+      </div>
+      <v-card-text class="text-justify" v-html="project.desc" />
+    </v-card>
+  </v-hover>
 </template>
 
-<script>
-export default {
-    name: "Project",
-    props: { project: Object },
-    data() {
-        return { intersecting: false };
-    },
-    methods: {
-        playPause(val) {
-            if (this.$refs.vid) {
-                try {
-                    if (
-                        (!this.small && val) ||
-                        (this.small && this.intersecting)
-                    ) {
-                        this.$refs.vid.play();
-                    } else {
-                        this.$refs.vid.pause();
-                    }
-                } catch (e) {
-                    // Don't handle exception for play/pause interruption
-                }
-            }
-            return val;
-        },
+<script lang="ts" setup>
+import { Project } from "@/data/types";
+import { computed } from "vue";
+import { ref } from "vue";
+import { PropType } from "vue";
+import { useDisplay, useTheme } from "vuetify";
 
-        onIntersect(entries) {
-            this.intersecting = entries[0].isIntersecting;
-            this.playPause();
-        },
-    },
-    computed: {
-        small() {
-            return this.$vuetify.breakpoint.smAndDown;
-        },
-        img() {
-            return this.project.media === "img";
-        },
-        vid() {
-            return this.project.media === "vid";
-        },
-    },
-};
+const { smAndDown } = useDisplay();
+const { current: currentTheme } = useTheme();
+const isDark = computed(() => currentTheme.value.dark);
+
+let intersecting = false;
+
+const props = defineProps({
+  project: { type: Object as PropType<Project>, required: true },
+});
+
+const vid = ref<HTMLVideoElement>();
+
+function playPause(val: boolean) {
+  if (vid) {
+    try {
+      if ((!small.value && val) || (small.value && intersecting)) {
+        vid.value?.play();
+      } else {
+        vid.value?.pause();
+      }
+    } catch (e) {
+      // Don't handle exception for play/pause interruption
+    }
+  }
+  return val;
+}
+
+function onIntersect(
+  isIntersecting: boolean,
+  entries: IntersectionObserverEntry[],
+  observer: IntersectionObserver
+) {
+  intersecting = entries[0].isIntersecting;
+  playPause(false);
+}
+
+const small = computed(() => smAndDown.value);
+const isImg = computed(() => props.project.media === "img");
+const isVid = computed(() => props.project.media === "vid");
 </script>
 
 <style>
 video {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 </style>

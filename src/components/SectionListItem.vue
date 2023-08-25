@@ -1,22 +1,20 @@
 <template>
-    <v-list-item @click="click">
-        <v-list-item-content>
-            <v-list-item-title v-text="section" />
-        </v-list-item-content>
-    </v-list-item>
+  <v-list-item @click="click">
+    <v-list-item-title v-text="section" />
+  </v-list-item>
 </template>
 
-<script>
-export default {
-    name: "SectionListItem",
-    props: {
-        section: String,
-    },
-    methods: {
-        click() {
-            this.$vuetify.goTo(`#${this.section}`);
-            this.$emit("click");
-        },
-    },
-};
+<script lang="ts" setup>
+const props = defineProps({ section: { type: String, required: true } });
+
+const emit = defineEmits(["click"]);
+
+function click() {
+  if (props.section) {
+    document
+      .getElementById(props.section)
+      ?.scrollIntoView({ behavior: "smooth" });
+  }
+  emit("click");
+}
 </script>
