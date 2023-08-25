@@ -1,16 +1,14 @@
 <template>
-  <v-tooltip top>
+  <v-tooltip location="top" :text="buttonText">
     <template v-slot:activator="{ props }">
       <v-icon
         :icon="mdiHeart"
-        v-on="props"
-        v-bind:aria-label="buttonText"
+        v-bind="props"
         @click="toggleDark"
         class="glow mx-2"
         color="white"
       />
     </template>
-    <!-- <span>{{ buttonText }}</span> -->
   </v-tooltip>
 </template>
 
