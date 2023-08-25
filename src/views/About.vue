@@ -52,13 +52,15 @@ export default {
     mounted() {
         this.typed = new Typed("#typed", {
             strings: [
-                "Developer",
-                "Beta Tester",
-                "Maker",
-                "Photographer",
-                "Rocket Enthusiast",
+                "Researcher",
                 "Computer Scientist",
-                "Cryptographer",
+                "Machine Learning Aficionado",
+                "Developer",
+                "Photographer",
+                "Music Enthuiastic",
+                "Hiker",
+                "Nature Explorer",
+                "Rocketry Fan",
             ],
             typeSpeed: 30,
             backSpeed: 30,
