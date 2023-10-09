@@ -2,6 +2,110 @@ import { Course, CourseSort } from "./types";
 
 const courses: Course[] = [
   {
+    title: "Advanced Natural Language Processing",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 769",
+    subject: "Computer Science",
+    number: "769",
+    description:
+      "Develop algorithms and mathematical models for natural language processing tasks, including text categorization, information retrieval, speech recognition, machine translation, and information extraction. Focus is on the state-of-the-art computational techniques as they are applied to natural language tasks.",
+    relevancy: {
+      date: new Date("2023-01"),
+      display: "Spring 2023",
+    },
+  },
+  {
+    title: "Distributed Systems",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 739",
+    subject: "Computer Science",
+    number: "739",
+    description:
+      "Basic concepts; distributed programming; distributed file systems; atomic actions; fault tolerance, transactions, program and data replication, recovery; distributed machine architectures; security and authentication; load balancing and process migration; distributed debugging; distributed performance measurement; distributed simulation techniques; distributed applications; correctness considerations and proof systems.",
+    relevancy: {
+      date: new Date("2023-01"),
+      display: "Spring 2023",
+    },
+  },
+  {
+    title: "Learning-Based Image Synthesis and Manipulation",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 839",
+    subject: "Computer Science",
+    number: "839",
+    description:
+      "This graduate course introduces students to machine learning based synthesis and manipulation of visual data (images and videos). Both classical (e.g., nearest neighbor, filtering) and modern deep learning based (e.g., ConvNets, GANs, Diffusion Models) algorithms will be presented for image representation, synthesis, and manipulation. It will be a mix of instructor led lectures and student led presentations. Students will learn to implement their own algorithms for image synthesis and manipulation, to understand and analyze state-of-the-art techniques, and to identify interesting open questions and future directions.",
+    relevancy: {
+      date: new Date("2022-09"),
+      display: "Fall 2022",
+    },
+  },
+  {
+    title: "Advanced Deep Learning",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 762",
+    subject: "Computer Science",
+    number: "762",
+    description:
+      "Explore methods and applications of deep learning. Covers cutting-edge topics, including neural architecture design, robustness and reliability of deep learning, learning with less supervision, lifelong machine learning, deep generative modeling, theoretical understanding of deep learning, and interpretable deep learning.",
+    relevancy: {
+      date: new Date("2022-09"),
+      display: "Fall 2022",
+    },
+  },
+  {
+    title: "Big Data Systems",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 744",
+    subject: "Computer Science",
+    number: "744",
+    description:
+      "Issues in the design and implementation of big data processing systems, including: an overview of cluster architecture, key design goals (flexibility, performance and fault tolerance), popular execution frameworks, basic abstractions, and applications (e.g., batch analytics, stream processing, graph processing, and machine learning).",
+    relevancy: {
+      date: new Date("2022-09"),
+      display: "Fall 2022",
+    },
+  },
+  {
+    title: "Machine Learning",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 760",
+    subject: "Computer Science",
+    number: "760",
+    description:
+      "Computational approaches to learning: including inductive inference, explanation-based learning, analogical learning, connectionism, and formal models. What it means to learn. Algorithms for learning. Comparison and evaluation of learning algorithms. Cognitive modeling and relevant psychological results.",
+    relevancy: {
+      date: new Date("2022-01"),
+      display: "Spring 2022",
+    },
+  },
+  {
+    title: "Database Management Systems",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 564",
+    subject: "Computer Science",
+    number: "564",
+    description:
+      "What a database management system is; different data models currently used to structure the logical view of the database: relational, hierarchical, and network. Hands-on experience with relational and network-based database systems. Implementation techniques for database systems. File organization, query processing, concurrency control, rollback and recovery, integrity and consistency, and view implementation.",
+    relevancy: {
+      date: new Date("2022-01"),
+      display: "Spring 2022",
+    },
+  },
+  {
+    title: "Matrix Methods in Machine Learning",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 532",
+    subject: "Computer Science",
+    number: "532",
+    description:
+      "Linear algebraic foundations of machine learning featuring real-world applications of matrix methods from classification and clustering to denoising and data analysis. Mathematical topics include: linear equations, regression, regularization, the singular value decomposition, and iterative algorithms. Machine learning topics include: the lasso, support vector machines, kernel methods, clustering, dictionary learning, neural networks, and deep learning.",
+    relevancy: {
+      date: new Date("2022-01"),
+      display: "Spring 2022",
+    },
+  },
+  {
     title: "Computer Graphics",
     institute: "UW-Madison",
     display: "UW-Madison Computer Sciences 559",
