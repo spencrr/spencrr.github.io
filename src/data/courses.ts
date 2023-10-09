@@ -2,6 +2,45 @@ import { Course, CourseSort } from "./types";
 
 const courses: Course[] = [
   {
+    title: "Foundation Models and the Future of Machine Learning",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 839",
+    subject: "Computer Science",
+    number: "839",
+    description:
+      "Large pretrained machine learning models, also known as foundation models, have taken the world by storm. Models like ChatGPT, Claude, and Stable Diffusion have astonishing abilities to answer questions, speak with users, and generate sophisticated art---all without any additional training. This course covers all aspects of these fascinating models. We will learn how such models are built, including data acquisition, selecting model architectures, and pretraining approaches. Next, a significant focus is how to use and deploy foundation models, including prompting strategies, providing in-context examples, fine-tuning, integrating into existing data science pipelines, and more. We discuss recent advances that improve foundation models, such as large-scale human feedback. Finally, we cover the potential societal impacts of these models. Familiarity with basic machine learning is assumed.",
+    relevancy: {
+      date: new Date("2023-09"),
+      display: "Fall 2023",
+    },
+  },
+  {
+    title: "Cloud-Native Database Systems",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 839",
+    subject: "Computer Science",
+    number: "839",
+    description:
+      "Modern applications are moving to the cloud for global accessibility, elasticity, high availability, and low cost. Databases are one of the foundational technologies for cloud applications. Compared to traditional on-premises databases, cloud-native databases have unique architectures (e.g., storage-disaggregation), embrace heterogeneous hardware technologies (e.g., GPU, CXL, SmartNIC), and face new application scenarios (e.g., serverless, autoscaling). This seminar course covers recent development in cloud-native databases from both industrial deployment and academic research.",
+    relevancy: {
+      date: new Date("2023-09"),
+      display: "Fall 2023",
+    },
+  },
+  {
+    title: "Advanced Database Management Systems",
+    institute: "UW-Madison",
+    display: "UW-Madison Computer Sciences 764",
+    subject: "Computer Science",
+    number: "764",
+    description:
+      "Implementation of database management systems, the impact of new technology on database management systems, back-end database computers, distributed database management systems, concurrency control, and query execution in both distributed and centralized systems, implementation of multiple user views, roll-back and recovery mechanisms, database translation.",
+    relevancy: {
+      date: new Date("2023-09"),
+      display: "Fall 2023",
+    },
+  },
+  {
     title: "Advanced Natural Language Processing",
     institute: "UW-Madison",
     display: "UW-Madison Computer Sciences 769",
