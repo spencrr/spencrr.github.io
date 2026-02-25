@@ -12,12 +12,9 @@
 </template>
 
 <script lang="ts" setup>
-import { Course } from "@/data/types";
+import type { Course } from "@/data/types";
 
-defineProps({
-  course: {
-    type: Object as () => Course,
-    required: true,
-  },
-});
+defineProps<{
+  course: Course;
+}>();
 </script>

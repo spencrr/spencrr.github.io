@@ -37,10 +37,8 @@
 </template>
 
 <script lang="ts" setup>
-import { Project } from "@/data/types";
-import { computed } from "vue";
-import { ref } from "vue";
-import { PropType } from "vue";
+import type { Project } from "@/data/types";
+import { computed, ref } from "vue";
 import { useDisplay, useTheme } from "vuetify";
 
 const { smAndDown } = useDisplay();
@@ -49,21 +47,21 @@ const isDark = computed(() => currentTheme.value.dark);
 
 let intersecting = false;
 
-const props = defineProps({
-  project: { type: Object as PropType<Project>, required: true },
-});
+const props = defineProps<{
+  project: Project;
+}>();
 
 const vid = ref<HTMLVideoElement>();
 
 function playPause(val: boolean) {
-  if (vid) {
+  if (vid.value) {
     try {
       if ((!small.value && val) || (small.value && intersecting)) {
         vid.value?.play();
       } else {
         vid.value?.pause();
       }
-    } catch (e) {
+    } catch {
       // Don't handle exception for play/pause interruption
     }
   }
@@ -71,9 +69,8 @@ function playPause(val: boolean) {
 }
 
 function onIntersect(
-  isIntersecting: boolean,
+  _isIntersecting: boolean,
   entries: IntersectionObserverEntry[],
-  observer: IntersectionObserver
 ) {
   intersecting = entries[0].isIntersecting;
   playPause(false);

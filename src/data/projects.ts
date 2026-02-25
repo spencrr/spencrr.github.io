@@ -1,4 +1,4 @@
-import { Project, ProjectConfig } from "./types";
+import type { Project, ProjectConfig } from "./types";
 
 const getSrc = (path: string) =>
   new URL(`/src/assets/projects/${path}`, import.meta.url).href;

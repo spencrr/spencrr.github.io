@@ -5,7 +5,7 @@
       <v-col cols="8" lg="2">
         <v-select
           :items="sortOptions"
-          v-model="selectedIndex.index"
+          v-model="selectedIndex"
           label="Sort By"
         ></v-select>
       </v-col>
@@ -27,16 +27,16 @@ import SectionBlock from "@/components/SectionBlock.vue";
 import Course from "@/components/Course.vue";
 
 import courses, { sorts } from "@/data/courses";
-import { computed, reactive } from "vue";
+import { computed, ref } from "vue";
 
 const sortOptions = Array.from(sorts).map((sort, index) => ({
   title: sort.display,
   value: index,
 }));
 
-let selectedIndex = reactive({ index: 0 });
+const selectedIndex = ref(0);
 
 const sortedCourses = computed(() => {
-  return Array.from(courses).sort(sorts[selectedIndex.index].compareTo);
+  return Array.from(courses).sort(sorts[selectedIndex.value].compareTo);
 });
 </script>

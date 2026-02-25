@@ -25,15 +25,14 @@
 </template>
 
 <script lang="ts" setup>
-import { Link } from "@/data/types";
-import { PropType } from "vue";
-import { useTheme } from "vuetify/lib/framework.mjs";
+import type { Link } from "@/data/types";
+import { useTheme } from "vuetify";
 
 const { current: currentTheme } = useTheme();
 
 const isDark = () => currentTheme.value.dark;
 
-const props = defineProps({
-  link: { type: Object as PropType<Link>, required: true },
-});
+defineProps<{
+  link: Link;
+}>();
 </script>

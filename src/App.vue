@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer temporary location="right" v-model="drawer.active">
+    <v-navigation-drawer temporary location="right" v-model="drawer">
       <v-list>
         <SectionListItem
           v-for="(section, index) in sections"
@@ -55,16 +55,16 @@ import DarkModeButton from "@/components/DarkModeButton.vue";
 
 import { sections } from "@/views/Home.vue";
 import links from "@/data/links";
-import { useDisplay, useTheme } from "vuetify/lib/framework.mjs";
-import { computed, reactive } from "vue";
+import { useDisplay, useTheme } from "vuetify";
+import { computed, ref } from "vue";
 
 const { xs } = useDisplay();
 const { current: currentTheme } = useTheme();
 
-let drawer = reactive({ active: false });
+const drawer = ref(false);
 
 function toggleDrawer() {
-  drawer.active = !drawer.active;
+  drawer.value = !drawer.value;
 }
 const isDark = () => currentTheme.value.dark;
 

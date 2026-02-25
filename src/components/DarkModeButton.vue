@@ -14,7 +14,7 @@
 
 <script lang="ts" setup>
 import { mdiHeart } from "@mdi/js";
-import { useTheme } from "vuetify/lib/framework.mjs";
+import { useTheme } from "vuetify";
 const buttonText = "Super Secret Dark Mode 😉";
 
 const { global: globalTheme } = useTheme();

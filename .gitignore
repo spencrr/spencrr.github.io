@@ -101,3 +101,6 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/macos,linux,windows,visualstudiocode,vue
 
 dist/
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js

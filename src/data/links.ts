@@ -1,4 +1,4 @@
-import { Link } from "./types";
+import type { Link } from "./types";
 
 const getSrc = (path: string) =>
   new URL(`/src/assets/links/${path}`, import.meta.url).href;
